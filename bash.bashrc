@@ -65,39 +65,39 @@ case $(tty) in
 		setterm --background blue --foreground green --store --clear reset
 		;;
 	/dev/tty4)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty5)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty6)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty7)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty8)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty9)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty10)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty11)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty12)
-		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty13)
-		setterm --foreground magenta --bold on --store --clear reset
+		setterm --foreground magenta --store --clear reset
 		;;
 	/dev/tty14)
-		setterm --foreground blue --bold on --store --clear reset
+		setterm --foreground magenta --store --clear reset
 		;;
 	/dev/tty15)
-		setterm --foreground blue --bold on --store --clear reset
+		setterm --foreground magenta --store --clear reset
 		;;
 esac
