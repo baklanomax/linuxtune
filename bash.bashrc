@@ -62,37 +62,37 @@ PROMPT_COMMAND="history -a; history -n"
 
 case $(tty) in
 	/dev/tty3)
-		setterm --foreground red --bold on --store --clear reset
+		setterm --background blue --foreground green --store --clear reset
 		;;
 	/dev/tty4)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty5)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty6)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty7)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty8)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty9)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty10)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty11)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty12)
-		setterm --foreground green --bold on --store --clear reset
+		setterm --backgroung cyan --foreground yellow --bold on --store --clear reset
 		;;
 	/dev/tty13)
-		setterm --foreground blue --bold on --store --clear reset
+		setterm --foreground magenta --bold on --store --clear reset
 		;;
 	/dev/tty14)
 		setterm --foreground blue --bold on --store --clear reset
