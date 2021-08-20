@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-###cat bash.bashrc > /etc/bash.bashrc
+cat sources.list > /etc/apt/sources.list
 
 apt update
 apt -y upgrade
