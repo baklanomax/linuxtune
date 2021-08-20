@@ -6,8 +6,7 @@ apt -y install install bc bison dwarves flex make libelf-dev libssl-dev
 apt -y autoremove
 
 cd /usr/src/
-
-rm
+rm -r *
 
 
 wget https://github.com/baklanomax/linux/archive/refs/tags/v5.13-fixkeys.tar.gz
