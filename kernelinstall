@@ -12,7 +12,7 @@ tar -zxf v5.13-fixkeys.tar.gz
 rm v5.13-fixkeys.tar.gz
 mv linux-5.13-fixkeys/ linux/
 cd linux/
-make olddefconfig
+#make olddefconfig
 
 
 
