@@ -65,7 +65,7 @@ case $(tty) in
 		setterm --background blue --foreground green --store --clear=rest
 		;;
 	/dev/tty4)
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
+		setterm --background blue --foreground green --store --clear=rest
 		;;
 	/dev/tty5)
 		setterm --background cyan --foreground yellow --bold on --store --clear=rest
@@ -92,12 +92,18 @@ case $(tty) in
 		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty13)
-		setterm --foreground magenta --store --clear=rest
-		;;
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
+		;;	
 	/dev/tty14)
 		setterm --foreground magenta --store --clear=rest
 		;;
 	/dev/tty15)
 		setterm --foreground magenta --store --clear=rest
 		;;
+	/dev/tty16)
+		setterm --foreground magenta --store --clear=rest
+		;;
+	/dev/tty16)
+		setterm --foreground magenta --store --clear=rest
+		;;	
 esac
