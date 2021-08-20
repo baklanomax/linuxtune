@@ -62,42 +62,42 @@ PROMPT_COMMAND="history -a; history -n"
 
 case $(tty) in
 	/dev/tty3)
-		setterm --background blue --foreground green --store --clear reset
+		setterm --background blue --foreground green --store --clear=rest
 		;;
 	/dev/tty4)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty5)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty6)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty7)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty8)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty9)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty10)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty11)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty12)
-		setterm --background cyan --foreground yellow --bold on --store --clear reset
+		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty13)
-		setterm --foreground magenta --store --clear reset
+		setterm --foreground magenta --store --clear=rest
 		;;
 	/dev/tty14)
-		setterm --foreground magenta --store --clear reset
+		setterm --foreground magenta --store --clear=rest
 		;;
 	/dev/tty15)
-		setterm --foreground magenta --store --clear reset
+		setterm --foreground magenta --store --clear=rest
 		;;
 esac
