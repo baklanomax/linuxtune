@@ -54,4 +54,4 @@ make olddefconfig
 #chmod u+s /usr/sbin/kbdrate
 #update-grub
 
-#echo -e "\n\n\nУстановка ядра успешно завершена."
+echo -e "\n\n\nУстановка ядра успешно завершена."
