@@ -5,6 +5,33 @@ apt -y upgrade
 apt -y install install bc bison flex make libelf-dev libssl-dev
 apt -y autoremove
 
+cd /usr/src/
+
+rm
+
+
+wget https://github.com/baklanomax/linux/archive/refs/tags/v5.13-fixkeys.tar.gz
+tar -zxf v5.13-fixkeys.tar.gz
+rm v5.13-fixkeys.tar.gz
+mv linux-5.13-fixkeys/ linux/
+cd linux/
+make olddefconfig
+
+
+
+
+sudo make nconfig
+General setup —> Build ID Salt —> "5.13"
+Cryptographic API —> Certificates for signature checking —> Additional X.509 keys for default system keyring —> ""
+sudo make
+sudo make INSTALL_MOD_STRIP=1 modules_install
+sudo make install
+sudo systemctl reboot
+
+
+
+
+
 cat bash.bashrc > /etc/bash.bashrc
 cat console-setup > /etc/default/console-setup
 cat daemon.conf > /etc/gdm3/daemon.conf
