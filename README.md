@@ -3,5 +3,6 @@
 2. tar -zxf v0.1.tar.gz
 3. rm v0.1.tar.gz
 4. cd linuxtune-0.1/
-5. chmod +x linuxtune
-6. sudo ./linuxtune
+5. chmod +x kernelinstall linuxtune
+6. sudo ./kernelinstall
+7. sudo ./linuxtune
