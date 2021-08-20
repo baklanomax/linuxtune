@@ -11,7 +11,7 @@ cat daemon.conf > /etc/gdm3/daemon.conf
 cat grub > /etc/default/grub
 cat logind.conf > /etc/systemd/logind.conf
 
-mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
+mkdir /etc/systemd/system/getty@tty{3..17}.service.d/
 cat override_root.conf > /etc/systemd/system/getty@tty{3,4}.service.d/override.conf
 cat override_user.conf | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
 cat override_devel.conf | tee /etc/systemd/system/getty@tty{14..17}.service.d/override.conf &> /dev/null
