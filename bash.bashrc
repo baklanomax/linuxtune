@@ -103,7 +103,7 @@ case $(tty) in
 	/dev/tty16)
 		setterm --foreground magenta --store --clear=rest
 		;;
-	/dev/tty16)
+	/dev/tty17)
 		setterm --foreground magenta --store --clear=rest
 		;;	
 esac
