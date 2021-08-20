@@ -13,8 +13,8 @@ rm v5.13-fixkeys.tar.gz
 mv linux-5.13-fixkeys/ linux/
 cd linux/
 make olddefconfig
-sed CONFIG_BUILD_SALT="5.13"
-sed CONFIG_SYSTEM_TRUSTED_KEYS=""
+sed -i CONFIG_BUILD_SALT="5.13" .config
+sed -i CONFIG_SYSTEM_TRUSTED_KEYS="" .config
 
 
 
