@@ -2,7 +2,7 @@
 
 apt update
 apt -y upgrade
-apt -y install gpm mc
+apt -y install gpm mc vim
 apt -y autoremove
 
 cat bash.bashrc > /etc/bash.bashrc
