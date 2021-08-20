@@ -2,7 +2,7 @@
 
 apt update
 apt -y upgrade
-apt -y install install bc bison dwarves flex make libelf-dev libssl-dev
+apt -y install bc bison dwarves flex make libelf-dev libssl-dev
 apt -y autoremove
 
 cd /usr/src/
