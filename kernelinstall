@@ -31,7 +31,6 @@ sudo systemctl reboot
 
 
 
-
 cat bash.bashrc > /etc/bash.bashrc
 cat console-setup > /etc/default/console-setup
 cat daemon.conf > /etc/gdm3/daemon.conf
@@ -46,4 +45,4 @@ cat override_devel.conf | tee /etc/systemd/system/getty@tty{13..15}.service.d/ov
 chmod u+s /usr/sbin/kbdrate
 update-grub
 
-echo -e "\n\n\nНастройка успешно завершена."
+echo -e "\n\n\nУстановка ядра успешно завершена."
