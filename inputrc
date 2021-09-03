@@ -133,7 +133,7 @@ $endif
 
 "//": "|"
 
-"\ew": "|"
-"\ee": "|"
-"\ey": "|"
-"\ea": "|"
+"\ew": unix-word-rubout
+"\ee": end-of-line
+"\ey": yank
+"\ea": beginning-of-line
