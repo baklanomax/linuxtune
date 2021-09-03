@@ -95,6 +95,7 @@ $endif
 "]]": "ш"
 
 "aa": "а"
+"as": delete-char
 
 "ss": "с"
 "sd": "#"
