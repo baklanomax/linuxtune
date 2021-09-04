@@ -5,6 +5,10 @@ read -p "Введите имя учётной записи для разрабо
 user=${user:-user}
 devel=${devel:-devel}
 
+if id $user
+then
+	echo ""
+fi
 
 cat sources.list > /etc/apt/sources.list
 
