@@ -22,8 +22,8 @@ cat logind.conf > /etc/systemd/logind.conf
 
 mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
 cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/override.conf &> /dev/null
-cat override_user.conf | sed 's/user/CONFIG_BUILD_SALT="5.14"/' | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
-cat override_devel.conf | sed 's/devel/CONFIG_BUILD_SALT="5.14"/' | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
+cat override_user.conf | sed 's/user/$user/' | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
+cat override_devel.conf | sed 's/devel/$devel/' | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
 chmod u+s /usr/sbin/kbdrate
 update-grub
