@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "ffff"
+echo "Введите имя учётной записи для пользователя (user):"
 read ddd
 
 cat sources.list > /etc/apt/sources.list
