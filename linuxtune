@@ -7,11 +7,11 @@ devel=${devel:-devel}
 
 if ! id $user
 then
-	echo ""
+	adduser $user
 fi
 if ! id $devel
 then
-	echo ""
+	adduser $devel
 fi
 
 cat sources.list > /etc/apt/sources.list
