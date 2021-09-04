@@ -15,7 +15,7 @@ apt -y autoremove
 
 cat bash.bashrc > /etc/bash.bashrc
 cat console-setup > /etc/default/console-setup
-cat daemon.conf > /etc/gdm3/daemon.conf
+cat daemon.conf | sed "" > /etc/gdm3/daemon.conf
 cat inputrc > /etc/inputrc
 cat grub > /etc/default/grub
 cat logind.conf > /etc/systemd/logind.conf
