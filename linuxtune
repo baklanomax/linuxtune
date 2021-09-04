@@ -9,6 +9,10 @@ if id $user
 then
 	echo ""
 fi
+if id $devel
+then
+	echo ""
+fi
 
 cat sources.list > /etc/apt/sources.list
 
