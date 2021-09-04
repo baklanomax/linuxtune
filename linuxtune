@@ -2,6 +2,8 @@
 
 read -p "Введите имя учётной записи для пользователя (по умолчанию user): " user
 read -p "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
+user=${user:-Richard}
+devel=${devel:-Richard}
 
 
 cat sources.list > /etc/apt/sources.list
