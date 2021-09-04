@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "ffff"
+read ddd
+
 cat sources.list > /etc/apt/sources.list
 
 apt update
