@@ -7,11 +7,11 @@ devel=${devel:-devel}
 
 if ! id $user
 then
-	adduser $user
+	adduser --disabled-login --gecos "" $user
 fi
 if ! id $devel
 then
-	adduser $devel
+	adduser --disabled-login --gecos "" $devel
 fi
 
 cat sources.list > /etc/apt/sources.list
