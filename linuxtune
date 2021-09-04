@@ -5,11 +5,11 @@ read -p "Введите имя учётной записи для разрабо
 user=${user:-user}
 devel=${devel:-devel}
 
-if id $user
+if ! id $user
 then
 	echo ""
 fi
-if id $devel
+if ! id $devel
 then
 	echo ""
 fi
