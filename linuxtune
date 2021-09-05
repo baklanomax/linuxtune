@@ -18,7 +18,7 @@ do
 	devel=${devel:-devel}
 	if [[ $(id -un $devel 2> /dev/null) != $devel ]]
 	then
-		adduser --disabled-login --gecos "" $devel && break || echo "Ошибка: недопустимое имя учётной записи"
+		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 	else
 		break
 	fi
