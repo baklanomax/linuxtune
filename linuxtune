@@ -3,7 +3,7 @@
 
 read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
 user=${user:-user}
-if [[ id -un $user != $user ]]
+if [[ (id -un $user) != $user ]]
 then
 	adduser --disabled-login --gecos "" $user
 fi
