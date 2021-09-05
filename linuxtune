@@ -3,14 +3,14 @@
 
 read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
 user=${user:-user}
-if ! id $user
+if ! id $user &> /dev/null
 then
 	adduser --disabled-login --gecos "" $user
 fi
 
 read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
 devel=${devel:-devel}
-if ! id $devel
+if ! id $devel &> /dev/null
 then
 	adduser --disabled-login --gecos "" $devel
 fi
