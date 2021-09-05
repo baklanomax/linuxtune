@@ -4,11 +4,11 @@ while true
 do
 	read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
 	user=${user:-user}
-	if [[ $(id -un $user 2> /dev/null) != $user ]]
+	if [[ $(id -un $user 2> /dev/null) == $user ]]
 	then
-		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-	else
 		break
+	else
+		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"	
 	fi
 done
 
@@ -16,11 +16,11 @@ while true
 do
 	read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
 	devel=${devel:-devel}
-	if [[ $(id -un $devel 2> /dev/null) != $devel ]]
+	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 	then
-		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-	else
 		break
+	else
+		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 	fi
 done
 
