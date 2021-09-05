@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
-read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
-read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
-user=${user:-user}
-devel=${devel:-devel}
 
+read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
+user=${user:-user}
 if ! id $user
 then
 	adduser --disabled-login --gecos "" $user
 fi
+
+read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
+devel=${devel:-devel}
 if ! id $devel
 then
 	adduser --disabled-login --gecos "" $devel
 fi
+
 
 cat sources.list > /etc/apt/sources.list
 
