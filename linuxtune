@@ -6,7 +6,7 @@ do
 	user=${user:-user}
 	if [[ $(id -un $user 2> /dev/null) != $user ]]
 	then
-		adduser --disabled-login --gecos "" $user && exit
+		adduser --disabled-login --gecos "" $user && break
 	fi
 done
 
@@ -16,7 +16,7 @@ do
 	devel=${devel:-devel}
 	if [[ $(id -un $devel 2> /dev/null) != $devel ]]
 	then
-		adduser --disabled-login --gecos "" $devel && exit
+		adduser --disabled-login --gecos "" $devel && break
 	fi
 done
 
