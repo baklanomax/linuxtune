@@ -6,7 +6,8 @@ do
 	user=${user:-user}
 	if [[ $(id -un $user 2> /dev/null) != $user ]]
 	then
-		adduser --disabled-login --gecos "" $user && break
+		if adduser --disabled-login --gecos "" $user 2> /dev/null
+		&& break
 	fi
 done
 
