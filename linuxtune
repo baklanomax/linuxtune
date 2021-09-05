@@ -7,6 +7,8 @@ do
 	if [[ $(id -un $user 2> /dev/null) != $user ]]
 	then
 		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+	else
+		break
 	fi
 done
 
@@ -17,6 +19,8 @@ do
 	if [[ $(id -un $devel 2> /dev/null) != $devel ]]
 	then
 		adduser --disabled-login --gecos "" $devel && break || echo "Ошибка: недопустимое имя учётной записи"
+	else
+		break
 	fi
 done
 
