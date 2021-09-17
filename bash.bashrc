@@ -66,19 +66,7 @@ case $(tty) in
 	/dev/tty[34])
 		setterm --background blue --foreground green --store --clear=rest
 		;;
-	/dev/tty5)
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
-		;;
-	/dev/tty6)
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
-		;;
-	/dev/tty7)
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
-		;;
-	/dev/tty8)
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
-		;;
-	/dev/tty9)
+	/dev/tty[59])
 		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;
 	/dev/tty10)
