@@ -63,10 +63,7 @@ alias mc='mc -u'
 alias mcedit='mcedit -u'
 
 case $(tty) in
-	/dev/tty3)
-		setterm --background blue --foreground green --store --clear=rest
-		;;
-	/dev/tty4)
+	/dev/tty[34])
 		setterm --background blue --foreground green --store --clear=rest
 		;;
 	/dev/tty5)
