@@ -93,16 +93,7 @@ case $(tty) in
 	/dev/tty13)
 		setterm --background cyan --foreground yellow --bold on --store --clear=rest
 		;;	
-	/dev/tty14)
+	/dev/tty1[45])
 		setterm --foreground magenta --store --clear=rest
 		;;
-	/dev/tty15)
-		setterm --foreground magenta --store --clear=rest
-		;;
-	/dev/tty16)
-		setterm --foreground magenta --store --clear=rest
-		;;
-	/dev/tty17)
-		setterm --foreground magenta --store --clear=rest
-		;;	
 esac
