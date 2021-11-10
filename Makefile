@@ -1,4 +1,4 @@
-TARGET = easypoetry
+TARGET = showkeym
 PREFIX ?= /usr/local
 SRCS = easypoetry.c
 OBJS = $(SRCS:.c=.o)
