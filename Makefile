@@ -1,6 +1,6 @@
 TARGET = showkeym
 PREFIX ?= /usr/local
-SRCS = easypoetry.c
+SRCS = showkeym.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean install uninstall
