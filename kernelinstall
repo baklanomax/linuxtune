@@ -7,10 +7,10 @@ apt -y autoremove
 
 cd /usr/src/
 rm -r *
-wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-fixkeys.tar.gz
-tar -zxf v5.15-fixkeys.tar.gz
-rm v5.15-fixkeys.tar.gz
-mv linux-5.15-fixkeys/ linux/
+wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
+tar -zxf v5.15-mod.tar.gz
+rm v5.15-mod.tar.gz
+mv linux-5.15-mod/ linux/
 cd linux/
 
 make olddefconfig
