@@ -28,7 +28,7 @@ cat sources.list > /etc/apt/sources.list
 
 apt update
 apt -y upgrade
-apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc
+apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 apt -y autoremove
 
 cat bash.bashrc > /etc/bash.bashrc
