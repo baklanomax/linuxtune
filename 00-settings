@@ -1,5 +1,5 @@
 [org/gnome/desktop/peripherals/keyboard]
-delay=uint32 1984
+delay=uint32 2000
 repeat-interval=uint32 110
 
 [org/gnome/desktop/screensaver]
