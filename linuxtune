@@ -44,7 +44,7 @@ sed "s/user/$user/" override_user.conf | tee /etc/systemd/system/getty@tty{5..13
 sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
 mkdir /etc/dconf/db/local.d
-cat user > /etc/dconf/db/profile/user
+cat user > /etc/dconf/profile/user
 cat xxx > /etc/dconf/db/local.d/00-settings
 dconf update
 
