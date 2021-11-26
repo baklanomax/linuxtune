@@ -1,1 +1,7 @@
+[org/gnome/desktop/peripherals/keyboard]
+delay=uint32 1984
+repeat-interval=uint32 110
 
+[org/gnome/desktop/screensaver]
+lock-delay=uint32 0
+lock-enabled=false
