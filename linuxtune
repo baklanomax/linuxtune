@@ -43,6 +43,11 @@ cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/overri
 sed "s/user/$user/" override_user.conf | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
 sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
+xxx
+yyy
+mkdir /etc/dconf/db/local.d
+cat xxx > /etc/dconf/db/local.d/xxx
+
 chmod u+s /usr/sbin/kbdrate
 update-grub
 
