@@ -45,7 +45,9 @@ sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14
 
 xxx
 yyy
+
 mkdir /etc/dconf/db/local.d
+cat xxx > /etc/dconf/db/profile/xxx
 cat xxx > /etc/dconf/db/local.d/xxx
 
 chmod u+s /usr/sbin/kbdrate
