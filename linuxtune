@@ -43,10 +43,10 @@ cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/overri
 sed "s/user/$user/" override_user.conf | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
 sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
-mkdir /etc/dconf/db/local.d
-cat user > /etc/dconf/profile/user
-cat 00-settings > /etc/dconf/db/local.d/00-settings
-dconf update
+sudo -u $user dbus- gsettings set org.gnome.desktop.peripherals.keyboard delay 2000
+sudo -u $user dbus- gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
+sudo -u $user dbus- gsettings set org.gnome.desktop.screensaver lock-delay 0
+sudo -u $user dbus- gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 chmod u+s /usr/sbin/kbdrate
 update-grub
