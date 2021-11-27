@@ -34,7 +34,6 @@ apt -y autoremove
 cat bash.bashrc > /etc/bash.bashrc
 cat console-setup > /etc/default/console-setup
 sed "s/=user/=$user/" daemon.conf > /etc/gdm3/daemon.conf
-cat ini > .config/mc/ini
 cat inputrc > /etc/inputrc
 cat grub > /etc/default/grub
 cat logind.conf > /etc/systemd/logind.conf
@@ -48,6 +47,9 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard d
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
+
+mkdir /home/user/.config/mc/
+cat ini > /home/user/.config/mc/ini
 
 chmod u+s /usr/sbin/kbdrate
 update-grub
