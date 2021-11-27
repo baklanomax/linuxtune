@@ -48,8 +48,8 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard r
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-mkdir /home/user/.config/mc/
-cat ini > /home/user/.config/mc/ini
+sudo -u $user mkdir /home/$user/.config/mc/
+sudo -u $user cat ini > /home/$user/.config/mc/ini
 
 chmod u+s /usr/sbin/kbdrate
 update-grub
