@@ -49,8 +49,8 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 mkdir -m 700 /root/{.config/,.config/mc/}
-sudo -u $user mkdir -p /home/$user/.config/mc/
-sudo -u $devel mkdir -p /home/$devel/.config/mc/
+sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
+sudo -u $devel mkdir -m 700 /home/$devel/{.config/,.config/mc/}
 cat ini > /root/.config/mc/ini
 cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
 cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
