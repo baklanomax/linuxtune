@@ -48,7 +48,7 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard r
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-mkdir -p -m 700 /root/.config/mc/
+mkdir -m 700 /root/.config/ /root/.config/mc/
 sudo -u $user mkdir -p /home/$user/.config/mc/
 sudo -u $devel mkdir -p /home/$devel/.config/mc/
 cat ini > /root/.config/mc/ini
