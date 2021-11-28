@@ -56,7 +56,7 @@ cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
 cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 
 uuid=$(lsblk /dev/sdb1 -no UUID)
-sed -i "s/UUID=.* none.*/UUID=$uuid none.*/" /etc/fstab
+sed -i "s/UUID=.* none/UUID=$uuid none/" /etc/fstab
 echo "RESUME=UUID=$uuid" > /etc/initramfs-tools/conf.d/resume
 
 chmod u+s /usr/sbin/kbdrate
