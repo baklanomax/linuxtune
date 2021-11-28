@@ -59,6 +59,7 @@ cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 /etc/initramfs-tools/conf.d/resume
 
 chmod u+s /usr/sbin/kbdrate
+update-initramfs -u -k all
 update-grub
 
 echo -e "\n\n\nНастройка успешно завершена."
