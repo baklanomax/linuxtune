@@ -55,7 +55,7 @@ cat ini > /root/.config/mc/ini
 cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
 cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 
-uuid=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f1)
+uuid=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f 1)
 sed -i "s/UUID=.* none/UUID=$uuid none/" /etc/fstab
 echo "RESUME=UUID=$uuid" > /etc/initramfs-tools/conf.d/resume
 
