@@ -13,7 +13,7 @@ rm v5.15-mod.tar.gz
 mv linux-5.15-mod/ linux/
 cd linux/
 
-rm /boot/
+rm /boot/!amd64
 rm -r /usr/lib/modiles/5.15.0/
 
 make olddefconfig
