@@ -14,7 +14,7 @@ mv linux-5.15-mod/ linux/
 cd linux/
 
 rm /boot/!amd64
-rm -r /usr/lib/modiles/5.15.0/
+rm -r /usr/lib/modiles/!amd64/
 
 make olddefconfig
 sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.15.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/; \
