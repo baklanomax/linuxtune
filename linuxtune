@@ -40,7 +40,7 @@ cat sources.list > /etc/apt/sources.list
 
 apt update
 apt -y upgrade
-apt -y install autopoint bison firmware-amd-graphics firmware-atheros firmware-iwlwifi flex gettext gpm mc tmux
+apt -y install autopoint bison firmware-amd-graphics firmware-atheros firmware-iwlwifi flex gettext gpm libpam0g-dev libtool make mc tmux
 apt -y autoremove
 
 mkdir -m 700 /root/{.config/,.config/mc/}
