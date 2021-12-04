@@ -24,9 +24,9 @@ do
 	fi
 done
 
-#while true
-#do
-#	read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
+while true
+do
+	read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
 #	devel=${devel:-devel}
 #	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 #	then
@@ -34,7 +34,7 @@ done
 #	else
 #		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 #	fi
-#done
+done
 
 cat sources.list > /etc/apt/sources.list
 
