@@ -77,7 +77,7 @@ update-initramfs -u -k all
 update-grub
 
 
-if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+if [[ $kbd == "y" ]]
 then
 	cd /usr/src/
 	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
@@ -93,7 +93,7 @@ then
 fi
 
 
-if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+if [[ $(id -un $devel 2> /dev/null) == "y" ]]
 then
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
