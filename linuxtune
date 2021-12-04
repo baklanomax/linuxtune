@@ -2,8 +2,7 @@
 
 while true
 do
-	read -ep "Введите имя учётной записи для пользователя (по умолчанию user): " user
-	user=${user:-user}
+	read -ep "Введите имя учётной записи для пользователя: " user
 	if [[ $(id -un $user 2> /dev/null) == $user ]]
 	then
 		break
@@ -14,8 +13,7 @@ done
 
 while true
 do
-	read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " devel
-	devel=${devel:-devel}
+	read -ep "Введите имя учётной записи для разработчика: " devel
 	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 	then
 		break
@@ -27,13 +25,20 @@ done
 while true
 do
 	read -ep "Пакет kbd с модифицированной командой showkey: " kbd
-#	devel=${devel:-devel}
-#	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
-#	then
-#		break
-#	else
-#		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-#	fi
+	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+	then
+		break
+	fi
+done
+
+
+while true
+do
+	read -ep "Пакет kbd с модифицированной командой showkey: " kernel
+	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+	then
+		break
+	fi
 done
 
 cat sources.list > /etc/apt/sources.list
