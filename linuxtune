@@ -44,7 +44,6 @@ sed "s/=user/=$user/" daemon.conf > /etc/gdm3/daemon.conf
 cat inputrc > /etc/inputrc
 cat grub > /etc/default/grub
 cat logind.conf > /etc/systemd/logind.conf
-sed -i "s/<scale>.<\/scale>/<scale>2<\/scale>/" /home/$user/.config/monitors.xml
 
 mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
 cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/override.conf &> /dev/null
