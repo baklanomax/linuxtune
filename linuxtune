@@ -93,7 +93,7 @@ then
 fi
 
 
-if [[ $(id -un $devel 2> /dev/null) == "y" ]]
+if [[ $kernel == "y" ]]
 then
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
