@@ -7,7 +7,7 @@ do
 	then
 		break
 	else
-		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"	
+		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 	fi
 done
 
@@ -103,7 +103,8 @@ then
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
 	tar -zxf v5.15-mod.tar.gz
-	rm -r /boot/*[!4]  linux/ /usr/lib/modules/*[!4]/ v5.15-mod.tar.gz 
+	rm -r linux/ /usr/lib/modules/*[!4]/ v5.15-mod.tar.gz
+	rm /boot/*[!4]
 	mv linux-5.15-mod/ linux/
 	cd linux/
 
