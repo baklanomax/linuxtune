@@ -77,8 +77,6 @@ update-initramfs -u -k all
 update-grub
 
 
-
-
 if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 then
 	cd /usr/src/
@@ -93,6 +91,7 @@ then
 	make
 	make install-strip
 fi
+
 
 if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 then
@@ -113,5 +112,6 @@ rm -r /usr/lib/modules/*[!4]/
 	make INSTALL_MOD_STRIP=1 modules_install
 	make install
 fi
+
 
 echo -e "\n\n\nНастройка успешно завершена."
