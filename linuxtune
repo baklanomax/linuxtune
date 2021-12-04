@@ -26,7 +26,7 @@ done
 
 while true
 do
-	read -ep "Введите имя учётной записи для разработчика (по умолчанию devel): " kbd
+	read -ep "Пакет kbd с модифицированной командой showkey: " kbd
 #	devel=${devel:-devel}
 #	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 #	then
