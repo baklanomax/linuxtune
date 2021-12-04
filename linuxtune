@@ -24,7 +24,7 @@ done
 
 while true
 do
-	read -ep "Пакет kbd с модифицированной командой showkey: " kbd
+	read -ep "Пакет kbd с модифицированной командой showkey? [y/n] " kbd
 	if [[ $kbd == "y" ]] || [[ $kbd == "n" ]]
 	then
 		break
@@ -34,7 +34,7 @@ done
 
 while true
 do
-	read -ep "Пакет kbd с модифицированной командой showkey: " kernel
+	read -ep "Пакет kbd с модифицированной командой showkey? [y/n] " kernel
 	if [[ $kernel == "y" ]] || [[ $kernel == "n" ]]
 	then
 		break
