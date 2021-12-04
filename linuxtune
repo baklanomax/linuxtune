@@ -98,12 +98,9 @@ then
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
 	tar -zxf v5.15-mod.tar.gz
-	rm -r linux/ v5.15-mod.tar.gz
+	rm -r /boot/*[!4]  linux/ /usr/lib/modules/*[!4]/ v5.15-mod.tar.gz 
 	mv linux-5.15-mod/ linux/
 	cd linux/
-
-rm /boot/*[!4]
-rm -r /usr/lib/modules/*[!4]/
 
 	make olddefconfig
 	sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.15.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/; \
