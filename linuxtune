@@ -82,7 +82,7 @@ update-grub
 if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 then
 	cd /usr/src/
-	rm -r *
+	rm -r kbd/
 	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
 	tar -zxf v2.4.0-mod.tar.gz
 	rm v2.4.0-mod.tar.gz
