@@ -25,7 +25,7 @@ done
 while true
 do
 	read -ep "Пакет kbd с модифицированной командой showkey: " kbd
-	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+	if [[ $kbd == "y" || $kbd == "n" ]]
 	then
 		break
 	fi
@@ -35,7 +35,7 @@ done
 while true
 do
 	read -ep "Пакет kbd с модифицированной командой showkey: " kernel
-	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+	if [[ $kernel == "y" || $kernel == "n" ]]
 	then
 		break
 	fi
