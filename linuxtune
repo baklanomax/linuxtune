@@ -76,4 +76,22 @@ chmod u+s /usr/sbin/kbdrate
 update-initramfs -u -k all
 update-grub
 
+
+
+cd /usr/src/
+rm -r *
+wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
+tar -zxf v2.4.0-mod.tar.gz
+rm v2.4.0-mod.tar.gz
+mv kbd-2.4.0-mod/ kbd/
+cd kbd/
+
+./autogen.sh
+./configure
+make
+make install-strip
+
+
+
+
 echo -e "\n\n\nНастройка успешно завершена."
