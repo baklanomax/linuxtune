@@ -84,8 +84,7 @@ then
 	cd /usr/src/
 	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
 	tar -zxf v2.4.0-mod.tar.gz
-	rm v2.4.0-mod.tar.gz
-	rm -r kbd/
+	rm -r kbd/ v2.4.0-mod.tar.gz
 	mv kbd-2.4.0-mod/ kbd/
 	cd kbd/
 
@@ -100,8 +99,7 @@ then
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
 	tar -zxf v5.15-mod.tar.gz
-	rm v5.15-mod.tar.gz
-	rm -r linux/
+	rm -r linux/ v5.15-mod.tar.gz
 	mv linux-5.15-mod/ linux/
 	cd linux/
 
@@ -114,11 +112,6 @@ rm -r /usr/lib/modules/*[!4]/
 	make -j $(nproc)
 	make INSTALL_MOD_STRIP=1 modules_install
 	make install
-
-
-
-
-
 fi
 
 echo -e "\n\n\nНастройка успешно завершена."
