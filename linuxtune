@@ -82,10 +82,10 @@ update-grub
 if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 then
 	cd /usr/src/
-	rm -r kbd/
 	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
 	tar -zxf v2.4.0-mod.tar.gz
 	rm v2.4.0-mod.tar.gz
+	rm -r kbd/
 	mv kbd-2.4.0-mod/ kbd/
 	cd kbd/
 
@@ -98,10 +98,10 @@ fi
 if [[ $(id -un $devel 2> /dev/null) == $devel ]]
 then
 	cd /usr/src/
-	rm -r linux/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.15-mod.tar.gz
 	tar -zxf v5.15-mod.tar.gz
 	rm v5.15-mod.tar.gz
+	rm -r linux/
 	mv linux-5.15-mod/ linux/
 	cd linux/
 
