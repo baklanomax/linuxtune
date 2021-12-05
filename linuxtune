@@ -45,7 +45,7 @@ cat sources.list > /etc/apt/sources.list
 
 apt update
 apt -y upgrade
-apt -y install autopoint bc bison dwarves firmware-amd-graphics firmware-atheros firmware-iwlwifi /
+apt -y install autopoint bc bison dwarves firmware-amd-graphics firmware-atheros firmware-iwlwifi \
 	flex gettext gpm libelf-dev libpam0g-dev libssl-dev libtool make mc tmux
 apt -y autoremove
 
@@ -110,8 +110,8 @@ then
 
 	config=$(ls /boot/config-* | tail -n 1)
 	make olddefconfig
-	sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.15.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/" .config
-	sed -i "s/.*CONFIG_SYSTEM_TRUSTED_KEYS.*/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/" .config
+	sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.15.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/; \
+		s/.*CONFIG_SYSTEM_TRUSTED_KEYS.*/CONFIG_SYSTEM_TRUSTED_KEYS=\"\"/" .config
 	make -j $(nproc)
 	make INSTALL_MOD_STRIP=1 modules_install
 	make install
