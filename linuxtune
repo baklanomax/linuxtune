@@ -57,7 +57,6 @@ cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
 cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 
 cat bash.bashrc > /etc/bash.bashrc
-cat console-setup > /etc/default/console-setup
 sed "s/=user/=$user/" daemon.conf > /etc/gdm3/daemon.conf
 cat inputrc > /etc/inputrc
 cat grub > /etc/default/grub
