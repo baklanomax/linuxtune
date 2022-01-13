@@ -46,7 +46,7 @@ cat sources.list > /etc/apt/sources.list
 apt update
 apt -y upgrade
 apt -y install autopoint bc bison dwarves firmware-amd-graphics firmware-atheros firmware-iwlwifi \
-	flex gettext gpm libelf-dev libpam0g-dev libssl-dev libtool make mc tmux
+	flex gettext gpm libelf-dev libpam0g-dev libssl-dev libtool make mc tmux vorbis-tools
 apt -y autoremove
 
 mkdir -m 700 /root/{.config/,.config/mc/}
