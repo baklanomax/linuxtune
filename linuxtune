@@ -2,7 +2,7 @@
 
 while true
 do
-	read -ep "Исправить ссылки на раздел подкачки? [y/n] " tune
+	read -ep "Выполнить основные настройки? [y/n] " tune
 	if [[ $tune == "y" ]] || [[ $tune == "n" ]]
 	then
 		break
