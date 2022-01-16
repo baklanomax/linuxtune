@@ -2,23 +2,10 @@
 
 while true
 do
-	read -ep "Введите имя учётной записи для пользователя: " user
-	if [[ $(id -un $user 2> /dev/null) == $user ]]
+	read -ep "Исправить ссылки на раздел подкачки? [y/n] " tune
+	if [[ $tune == "y" ]] || [[ $tune == "n" ]]
 	then
 		break
-	else
-		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-	fi
-done
-
-while true
-do
-	read -ep "Введите имя учётной записи для разработчика: " devel
-	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
-	then
-		break
-	else
-		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 	fi
 done
 
@@ -47,6 +34,28 @@ do
 	if [[ $kernel == "y" ]] || [[ $kernel == "n" ]]
 	then
 		break
+	fi
+done
+
+while true
+do
+	read -ep "Введите имя учётной записи для пользователя: " user
+	if [[ $(id -un $user 2> /dev/null) == $user ]]
+	then
+		break
+	else
+		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+	fi
+done
+
+while true
+do
+	read -ep "Введите имя учётной записи для разработчика: " devel
+	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+	then
+		break
+	else
+		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
 	fi
 done
 
