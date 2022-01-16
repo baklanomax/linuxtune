@@ -24,6 +24,15 @@ done
 
 while true
 do
+	read -ep "Исправить ссылки на раздел подкачки? [y/n] " swap
+	if [[ $swap == "y" ]] || [[ $swap == "n" ]]
+	then
+		break
+	fi
+done
+
+while true
+do
 	read -ep "Установить пакет kbd с модифицированной командой showkey? [y/n] " kbd
 	if [[ $kbd == "y" ]] || [[ $kbd == "n" ]]
 	then
@@ -72,6 +81,8 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard r
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
 sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
+chmod u+s /usr/sbin/kbdrate
+
 if [[ $swap == "y"]]
 then
 	uuid=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f 1)
@@ -79,7 +90,6 @@ then
 	echo "RESUME=UUID=$uuid" > /etc/initramfs-tools/conf.d/resume
 fi
 
-chmod u+s /usr/sbin/kbdrate
 update-initramfs -u -k all
 update-grub
 
