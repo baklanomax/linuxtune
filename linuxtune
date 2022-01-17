@@ -91,33 +91,30 @@ fi
 
 if [[ $tune == "y"]]
 then
+	mkdir -m 700 /root/{.config/,.config/mc/}
+	sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
+	sudo -u $devel mkdir -m 700 /home/$devel/{.config/,.config/mc/}
+	cat ini > /root/.config/mc/ini
+	cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
+	cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 
-mkdir -m 700 /root/{.config/,.config/mc/}
-sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
-sudo -u $devel mkdir -m 700 /home/$devel/{.config/,.config/mc/}
-cat ini > /root/.config/mc/ini
-cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
-cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
+	cat bash.bashrc > /etc/bash.bashrc
+	sed "s/=user/=$user/" daemon.conf > /etc/gdm3/daemon.conf
+	cat inputrc > /etc/inputrc
+	cat grub > /etc/default/grub
+	cat logind.conf > /etc/systemd/logind.conf
 
-cat bash.bashrc > /etc/bash.bashrc
-sed "s/=user/=$user/" daemon.conf > /etc/gdm3/daemon.conf
-cat inputrc > /etc/inputrc
-cat grub > /etc/default/grub
-cat logind.conf > /etc/systemd/logind.conf
+	mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
+	cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/override.conf &> /dev/null
+	sed "s/user/$user/" override_user.conf | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
+	sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
-mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
-cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/override.conf &> /dev/null
-sed "s/user/$user/" override_user.conf | tee /etc/systemd/system/getty@tty{5..13}.service.d/override.conf &> /dev/null
-sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard delay 2000
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard delay 2000
-sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
-sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
-sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
-
-chmod u+s /usr/sbin/kbdrate
-
-
+	chmod u+s /usr/sbin/kbdrate
 	update-grub
 fi
 
