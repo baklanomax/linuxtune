@@ -81,10 +81,10 @@ then
 	then
 		apt -y install autopoint bison flex gettext libpam0g-dev libtool make  
 	fi
-#	if [[ $kernel == "y" ]]
-#	then
-#		apt -y install
-#	fi
+	if [[ $kernel == "y" ]]
+	then
+		apt -y install make
+	fi
 #autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make
 	apt -y autoremove
 fi
