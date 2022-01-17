@@ -85,7 +85,6 @@ then
 	then
 		apt -y install bc bison flex libelf-dev libssl-dev make
 	fi
-# dwarves libpam0g-dev libtool
 	apt -y autoremove
 fi
 
