@@ -83,9 +83,9 @@ then
 	fi
 	if [[ $kernel == "y" ]]
 	then
-		apt -y install bison flex make
+		apt -y install bison flex libssl-dev make
 	fi
-#bc dwarves libelf-dev libpam0g-dev libssl-dev libtool
+#bc dwarves libelf-dev libpam0g-dev libtool
 	apt -y autoremove
 fi
 
