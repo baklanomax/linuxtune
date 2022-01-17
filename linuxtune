@@ -85,12 +85,12 @@ then
 #	then
 #		apt -y install
 #	fi
+#autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make
 	apt -y autoremove
 fi
 
-
-#autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
-
+if [[ $tune == "y"]]
+then
 
 mkdir -m 700 /root/{.config/,.config/mc/}
 sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
@@ -118,8 +118,8 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabl
 chmod u+s /usr/sbin/kbdrate
 
 
-update-grub
-
+	update-grub
+fi
 
 if [[ $kbd == "y" ]]
 then
