@@ -77,19 +77,19 @@ then
 	then
 		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
-	if [[ $kbd == "y" ]]
-	then
-		apt -y install
-	fi
-	if [[ $kernel == "y" ]]
-	then
-		apt -y install
-	fi
+#	if [[ $kbd == "y" ]]
+#	then
+#		apt -y install
+#	fi
+#	if [[ $kernel == "y" ]]
+#	then
+#		apt -y install
+#	fi
 	apt -y autoremove
 fi
 
 
-autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
+#autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
 
 
 mkdir -m 700 /root/{.config/,.config/mc/}
