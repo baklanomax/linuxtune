@@ -89,14 +89,7 @@ then
 fi
 
 
-
-
-
-
-
-
-apt -y install autopoint bc bison dwarves  \
-	flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
+autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
 
 
 mkdir -m 700 /root/{.config/,.config/mc/}
