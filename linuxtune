@@ -79,7 +79,7 @@ then
 	fi
 	if [[ $kbd == "y" ]]
 	then
-		apt -y install autopoint libtool
+		apt -y install autopoint libtool make
 	fi
 #	if [[ $kernel == "y" ]]
 #	then
