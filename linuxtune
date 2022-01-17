@@ -62,6 +62,7 @@ then
 	uuid=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f 1)
 	sed -i "s/UUID=.* none/UUID=$uuid none/" /etc/fstab
 	echo "RESUME=UUID=$uuid" > /etc/initramfs-tools/conf.d/resume
+	update-initramfs -u -k all
 fi
 
 cat sources.list > /etc/apt/sources.list
@@ -99,7 +100,7 @@ chmod u+s /usr/sbin/kbdrate
 
 
 
-update-initramfs -u -k all
+
 update-grub
 
 
