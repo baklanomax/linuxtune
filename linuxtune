@@ -75,7 +75,7 @@ then
 	apt -y upgrade
 	if [[ $tune == "y" ]]
 	then
-		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi mc tmux
+		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
 	apt -y autoremove
 fi
@@ -88,7 +88,7 @@ fi
 
 
 apt -y install autopoint bc bison dwarves  \
-	flex gettext gpm libelf-dev libpam0g-dev libssl-dev libtool make 
+	flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make 
 
 
 mkdir -m 700 /root/{.config/,.config/mc/}
