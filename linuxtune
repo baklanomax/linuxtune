@@ -77,6 +77,14 @@ then
 	then
 		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
+	if [[ $kbd == "y" ]]
+	then
+		apt -y install
+	fi
+	if [[ $kernel == "y" ]]
+	then
+		apt -y install
+	fi
 	apt -y autoremove
 fi
 
