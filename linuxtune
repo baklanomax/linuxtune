@@ -99,8 +99,6 @@ sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabl
 chmod u+s /usr/sbin/kbdrate
 
 
-
-
 update-grub
 
 
@@ -118,7 +116,6 @@ then
 	make
 	make install-strip
 fi
-
 
 if [[ $kernel == "y" ]]
 then
@@ -139,6 +136,5 @@ then
 	make INSTALL_MOD_STRIP=1 modules_install
 	make install
 fi
-
 
 echo -e "\n\n\nНастройка успешно завершена."
