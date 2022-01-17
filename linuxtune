@@ -83,9 +83,9 @@ then
 	fi
 	if [[ $kernel == "y" ]]
 	then
-		apt -y install make
+		apt -y install make gcc
 	fi
-#autopoint bc bison dwarves flex gettext  libelf-dev libpam0g-dev libssl-dev libtool make
+#autopoint bc bison dwarves flex libelf-dev libpam0g-dev libssl-dev libtool
 	apt -y autoremove
 fi
 
