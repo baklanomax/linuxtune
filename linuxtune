@@ -33,7 +33,7 @@ do
 	fi
 done
 
-if [[ $tune == "y"]]
+if [[ $tune == "y" ]]
 then
 	while true
 	do
@@ -57,7 +57,7 @@ then
 	done
 fi
 
-if [[ $swap == "y"]]
+if [[ $swap == "y" ]]
 then
 	uuid=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f 1)
 	sed -i "s/UUID=.* none/UUID=$uuid none/" /etc/fstab
@@ -89,7 +89,7 @@ then
 	apt -y autoremove
 fi
 
-if [[ $tune == "y"]]
+if [[ $tune == "y" ]]
 then
 	mkdir -m 700 /root/{.config/,.config/mc/}
 	sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
