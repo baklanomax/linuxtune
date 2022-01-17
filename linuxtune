@@ -77,10 +77,10 @@ then
 	then
 		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
-#	if [[ $kbd == "y" ]]
-#	then
-#		apt -y install autopoint
-#	fi
+	if [[ $kbd == "y" ]]
+	then
+		apt -y install autopoint
+	fi
 #	if [[ $kernel == "y" ]]
 #	then
 #		apt -y install
