@@ -2,22 +2,20 @@
 
 while true
 do
-	read -ep "Выполнить основные настройки? [y/n] " tune
-	if [[ $tune == "y" ]] || [[ $tune == "n" ]]
-	then
-		break
-	fi
-done
-
-while true
-do
 	read -ep "Исправить ссылки на раздел подкачки? [y/n] " swap
 	if [[ $swap == "y" ]] || [[ $swap == "n" ]]
 	then
 		break
 	fi
 done
-
+while true
+do
+	read -ep "Выполнить основные настройки? [y/n] " tune
+	if [[ $tune == "y" ]] || [[ $tune == "n" ]]
+	then
+		break
+	fi
+done
 while true
 do
 	read -ep "Установить пакет kbd с модифицированной командой showkey? [y/n] " kbd
@@ -26,8 +24,6 @@ do
 		break
 	fi
 done
-
-
 while true
 do
 	read -ep "Установить ядро с поддержкой отображения текущей раскладки клавиатуры при работе в консоли? [y/n] " kernel
@@ -37,27 +33,31 @@ do
 	fi
 done
 
-while true
-do
-	read -ep "Введите имя учётной записи для пользователя: " user
-	if [[ $(id -un $user 2> /dev/null) == $user ]]
-	then
-		break
-	else
-		adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-	fi
-done
+if [[ $tune == "y"]]
+then
+	while true
+	do
+		read -ep "Введите имя учётной записи для пользователя: " user
+		if [[ $(id -un $user 2> /dev/null) == $user ]]
+		then
+			break
+		else
+			adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+		fi
+	done
+	while true
+	do
+		read -ep "Введите имя учётной записи для разработчика: " devel
+		if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+		then
+			break
+		else
+			adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+		fi
+	done
+fi
 
-while true
-do
-	read -ep "Введите имя учётной записи для разработчика: " devel
-	if [[ $(id -un $devel 2> /dev/null) == $devel ]]
-	then
-		break
-	else
-		adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-	fi
-done
+
 
 cat sources.list > /etc/apt/sources.list
 
