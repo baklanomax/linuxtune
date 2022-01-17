@@ -77,13 +77,17 @@ then
 	then
 		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
+	if [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
+	then
+		apt -y install bison flex make
+	fi
 	if [[ $kbd == "y" ]]
 	then
-		apt -y install autopoint bison flex gettext libpam0g-dev libtool make
+		apt -y install autopoint gettext libpam0g-dev libtool
 	fi
 	if [[ $kernel == "y" ]]
 	then
-		apt -y install bc bison flex libelf-dev libssl-dev make
+		apt -y install bc libelf-dev libssl-dev
 	fi
 	apt -y autoremove
 fi
