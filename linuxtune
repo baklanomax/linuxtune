@@ -87,7 +87,7 @@ then
 	fi
 	if [[ $kernel == "y" ]]
 	then
-		apt -y install bc libelf-dev libssl-dev
+		apt -y install bc dwarves libelf-dev libssl-dev
 	fi
 	apt -y autoremove
 fi
