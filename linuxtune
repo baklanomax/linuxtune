@@ -75,7 +75,7 @@ then
 	apt -y upgrade
 	if [[ $tune == "y" ]]
 	then
-		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
+		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc postfix tmux
 	fi
 	if [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
 	then
