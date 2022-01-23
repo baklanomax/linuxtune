@@ -143,3 +143,5 @@ attachments   -I message/external-body
 source /usr/lib/mutt/source-muttrc.d|
 
 set from=x2017rus@mail.ru
+set imap_pass=Qazwsxed1!
+set smtp_pass=Qazwsxed1!
