@@ -155,6 +155,7 @@ fi
 #	chmod u+s /usr/sbin/kbdrate
 #	update-grub
 #fi
+
 if [[ $tune == "y" ]]
 then
 	mkdir -m 700 /root/{.config/,.config/mc/}
