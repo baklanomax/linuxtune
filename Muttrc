@@ -144,5 +144,6 @@ source /usr/lib/mutt/source-muttrc.d|
 
 set realname="Валентин Бакланов"
 set from=x2017rus@mail.ru
-set imap_pass=Qazwsxed1!
-set smtp_pass=Qazwsxed1!
+set imap_user=x2017rus@mail.ru
+set imap_pass=5fu7yLcqyEgeeDahdLYb
+set smtp_pass=5fu7yLcqyEgeeDahdLYb
