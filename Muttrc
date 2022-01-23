@@ -142,4 +142,4 @@ attachments   -I message/external-body
 # See /usr/share/doc/mutt/README.Debian for details.
 source /usr/lib/mutt/source-muttrc.d|
 
-set from = username@mail.ru
+set from=x2017rus@mail.ru
