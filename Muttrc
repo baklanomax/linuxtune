@@ -142,7 +142,7 @@ attachments   -I message/external-body
 # See /usr/share/doc/mutt/README.Debian for details.
 source /usr/lib/mutt/source-muttrc.d|
 
-set realname="Дмитрий Моск"
+set realname="Валентин Бакланов"
 set from=x2017rus@mail.ru
 set imap_pass=Qazwsxed1!
 set smtp_pass=Qazwsxed1!
