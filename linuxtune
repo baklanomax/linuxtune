@@ -41,29 +41,29 @@ do
 	fi
 done
 
-if [[ $mail == "y" ]]
-then
-	while true
-	do
-		read -ep "Введите имя учётной записи для пользователя: " user
-		if [[ $(id -un $user 2> /dev/null) == $user ]]
-		then
-			break
-		else
-			adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-		fi
-	done
-	while true
-	do
-		read -ep "Введите имя учётной записи для разработчика: " devel
-		if [[ $(id -un $devel 2> /dev/null) == $devel ]]
-		then
-			break
-		else
-			adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-		fi
-	done
-fi
+#if [[ $mail == "y" ]]
+#then
+#	while true
+#	do
+#		read -ep "Введите имя учётной записи для пользователя: " user
+#		if [[ $(id -un $user 2> /dev/null) == $user ]]
+#		then
+#			break
+#		else
+#			adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+#		fi
+#	done
+#	while true
+#	do
+#		read -ep "Введите имя учётной записи для разработчика: " devel
+#		if [[ $(id -un $devel 2> /dev/null) == $devel ]]
+#		then
+#			break
+#		else
+#			adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
+#		fi
+#	done
+#fi
 if [[ $tune == "y" ]]
 then
 	while true
@@ -96,7 +96,7 @@ then
 	update-initramfs -u -k all
 fi
 
-if [[ $tune == "y" ]] || [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
+if [[ $mail == "y" ]] || [[ $tune == "y" ]] || [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
 then
 	if [[ $tune == "y" ]]
 	then
@@ -106,7 +106,11 @@ then
 	apt -y upgrade
 	if [[ $tune == "y" ]]
 	then
-		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc mutt tmux
+		apt -y install mutt
+	fi
+	if [[ $tune == "y" ]]
+	then
+		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
 	fi
 	if [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
 	then
