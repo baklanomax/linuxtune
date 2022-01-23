@@ -10,6 +10,14 @@ do
 done
 while true
 do
+	read -ep "Установить почтовый клиент? [y/n] " mail
+	if [[ $mail == "y" ]] || [[ $mail == "n" ]]
+	then
+		break
+	fi
+done
+while true
+do
 	read -ep "Выполнить основные настройки? [y/n] " tune
 	if [[ $tune == "y" ]] || [[ $tune == "n" ]]
 	then
