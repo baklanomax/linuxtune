@@ -142,13 +142,11 @@ attachments   -I message/external-body
 # See /usr/share/doc/mutt/README.Debian for details.
 source /usr/lib/mutt/source-muttrc.d|
 
-set realname="Валентин Бакланов"
-set from=x2017rus@mail.ru
-
 set imap_user=x2017rus@mail.ru
 set imap_pass=5fu7yLcqyEgeeDahdLYb
 set folder=imaps://imap.mail.ru/
 set spoolfile=+INBOX
 
-
+set realname="Валентин Бакланов"
+set from=x2017rus@mail.ru
 set smtp_pass=5fu7yLcqyEgeeDahdLYb
