@@ -81,10 +81,6 @@ fi
 
 if [[ $mail == "y" ]] || [[ $tune == "y" ]] || [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
 then
-	if [[ $tune == "y" ]]
-	then
-		cat sources.list > /etc/apt/sources.list
-	fi
 	apt update
 	apt -y upgrade
 	if [[ $mail == "y" ]]
@@ -93,7 +89,7 @@ then
 	fi
 	if [[ $tune == "y" ]]
 	then
-		apt -y install firmware-amd-graphics firmware-atheros firmware-iwlwifi gpm mc tmux
+		apt -y install gpm mc tmux
 	fi
 	if [[ $kbd == "y" ]] || [[ $kernel == "y" ]]
 	then
