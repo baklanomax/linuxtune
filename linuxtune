@@ -43,26 +43,9 @@ done
 
 if [[ $mail == "y" ]]
 then
-#	while true
-#	do
-	read -ep "Введите имя учётной записи для пользователя: " realname
-#		if [[ $(id -un $user 2> /dev/null) == $user ]]
-#		then
-#			break
-#		else
-#			adduser --disabled-login --gecos "" $user 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-#		fi
-#	done
-#	while true
-#	do
-	read -ep "Введите имя учётной записи для разработчика: " devel
-#		if [[ $(id -un $devel 2> /dev/null) == $devel ]]
-#		then
-#			break
-#		else
-#			adduser --disabled-login --gecos "" $devel 2> /dev/null && break || echo "Ошибка: недопустимое имя учётной записи"
-#		fi
-#	done
+	read -ep "Введите имя отправителя  учётной записи для пользователя: " name
+	read -ep "Введите имя учётной записи для разработчика: " login
+	read -ep "Введите имя учётной записи для разработчика: " password
 fi
 if [[ $tune == "y" ]]
 then
