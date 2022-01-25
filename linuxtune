@@ -44,8 +44,8 @@ done
 if [[ $mail == "y" ]]
 then
 	read -ep "Введите имя отправителя учётной записи для пользователя: " name
-	read -ep "Введите имя учётной записи для почтового клиента: " login
-	read -esp "Введите пароль от почтовой службы: " password
+	read -ep "Введите имя учётной записи Mail.ru: " login
+	read -esp "Введите пароль Mail.ru: " password
 fi
 if [[ $tune == "y" ]]
 then
