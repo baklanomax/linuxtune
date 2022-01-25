@@ -150,3 +150,5 @@ set spoolfile=+INBOX
 #set realname="Валентин Бакланов"
 #set from=x2017rus@mail.ru
 #set smtp_pass=5fu7yLcqyEgeeDahdLYb
+
+set sidebar_visible=yes
