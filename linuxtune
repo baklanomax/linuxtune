@@ -85,7 +85,7 @@ then
 	apt -y upgrade
 	if [[ $mail == "y" ]]
 	then
-		apt -y install neomutt
+		apt -y install mutt
 	fi
 	if [[ $tune == "y" ]]
 	then
