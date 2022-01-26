@@ -146,7 +146,7 @@ set imap_user=x2017rus@mail.ru
 set imap_pass=5fu7yLcqyEgeeDahdLYb
 set folder=imaps://imap.mail.ru/
 set spoolfile=+INBOX
-#set imap_check_subscribed
+set imap_check_subscribed
 
 #set smtp_url=smtps://smtp.mail.ru
 #set smtp_pass=5fu7yLcqyEgeeDahdLYb
