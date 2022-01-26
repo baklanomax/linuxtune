@@ -108,7 +108,7 @@ fi
 
 if [[ $mail == "y" ]]
 then
-	cat Muttrc > /etc/Muttrc
+	sed "s/Ivan Ivanov/$name/" Muttrc > /etc/Muttrc
 fi
 
 if [[ $tune == "y" ]]
