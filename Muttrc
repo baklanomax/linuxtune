@@ -151,6 +151,6 @@ set imap_check_subscribed
 set smtp_url=smtps://smtp.mail.ru
 set smtp_pass=5fu7yLcqyEgeeDahdLYb
 set from=x2017rus@mail.ru
-set realname="Валентин Бакланов"
+set realname="Ivan Ivanov"
 
 set sidebar_visible=yes
