@@ -108,7 +108,7 @@ fi
 
 if [[ $mail == "y" ]]
 then
-	sed "s/ivanov/$login/; s/password/$password/; s/Ivan Ivanov/$name/" Muttrc > /etc/Muttrc
+	sed "s/ivanov/$login/g; s/password/$password/g; s/Ivan Ivanov/$name/" Muttrc > /etc/Muttrc
 fi
 
 if [[ $tune == "y" ]]
