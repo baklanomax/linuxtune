@@ -154,5 +154,6 @@ set from=ivanov@mail.ru
 set realname="Ivan Ivanov"
 set record=+Отправленные
 set trash=+Корзина
+set postponed=+Черновики
 
 #set sidebar_visible=yes
