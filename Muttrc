@@ -152,6 +152,7 @@ set smtp_url=smtps://ivanov@smtp.mail.ru
 set smtp_pass=5fu7yLcqyEgeeDahdLYb
 set from=ivanov@mail.ru
 set realname="Ivan Ivanov"
-set record="+Отправленные"
+set record=+Отправленные
+set trash=+Корзина
 
 #set sidebar_visible=yes
