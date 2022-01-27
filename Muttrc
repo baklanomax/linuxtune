@@ -143,17 +143,15 @@ attachments   -I message/external-body
 source /usr/lib/mutt/source-muttrc.d|
 
 set imap_user=ivanov@mail.ru
-set imap_pass=5fu7yLcqyEgeeDahdLYb
+set imap_pass=password
 set folder=imaps://imap.mail.ru/
 set spoolfile=+INBOX
 set imap_check_subscribed
 
 set smtp_url=smtps://ivanov@smtp.mail.ru
-set smtp_pass=5fu7yLcqyEgeeDahdLYb
+set smtp_pass=password
 set from=ivanov@mail.ru
 set realname="Ivan Ivanov"
 set record=+Отправленные
 set trash=+Корзина
 set postponed=+Черновики
-
-#set sidebar_visible=yes
