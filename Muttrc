@@ -147,6 +147,7 @@ set imap_pass=password
 set folder=imaps://imap.mail.ru/
 set spoolfile=+INBOX
 set imap_check_subscribed
+#set header_cache=~/.mutt/hcache
 
 set smtp_url=smtps://ivanov@smtp.mail.ru
 set smtp_pass=password
