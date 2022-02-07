@@ -161,7 +161,7 @@ fi
 
 if [[ $kernel == "y" ]]
 then
-	cat keysound > /usr/local/bin/keysound
+	sed "s/user/$user/" keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
 
 	cd /usr/src/
