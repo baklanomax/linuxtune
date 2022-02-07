@@ -158,6 +158,8 @@ fi
 
 if [[ $kernel == "y" ]]
 then
+	#xxx
+	
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.16-mod.tar.gz
 	tar -zxf v5.16-mod.tar.gz
