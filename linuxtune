@@ -47,7 +47,7 @@ then
 	read -ep "Введите пароль для Mail.ru: " password
 	read -ep "Введите имя отправителя для почтового клиента: " name
 fi
-if [[ $tune == "y" ]] || [[ $kernel == "n" ]]
+if [[ $tune == "y" ]] || [[ $kernel == "y" ]]
 then
 	while true
 	do
