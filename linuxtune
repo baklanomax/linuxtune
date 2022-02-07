@@ -158,7 +158,7 @@ fi
 
 if [[ $kernel == "y" ]]
 then
-	cat kbdplay > /etc/bash.bashrc
+	cat keysound > /usr/local/bin/keysound
 	
 	cd /usr/src/
 	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.16-mod.tar.gz
