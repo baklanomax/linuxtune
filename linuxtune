@@ -165,11 +165,11 @@ then
 	chmod +x /usr/local/bin/keysound
 
 	cd /usr/src/
-	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.16-mod.tar.gz
-	tar -zxf v5.16-mod.tar.gz
-	rm -r linux/ /usr/lib/modules/*[!4]/ v5.16-mod.tar.gz
+	wget https://github.com/baklanomax/linux/archive/refs/tags/v5.16-mod-test-1.tar.gz
+	tar -zxf v5.16-mod-test-1.tar.gz
+	rm -r linux/ /usr/lib/modules/*[!4]/ v5.16-mod-test-1.tar.gz
 	rm /boot/*[!4]
-	mv linux-5.16-mod/ linux/
+	mv linux-5.16-mod-test-1/ linux/
 	cd linux/
 
 	config=$(ls /boot/config-* | tail -n 1)
