@@ -161,6 +161,7 @@ fi
 
 if [[ $kernel == "y" ]]
 then
+	#id=$(lsblk -n -o UUID,FSTYPE | grep swap | cut -d " " -f 1)
 	cat keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
 
