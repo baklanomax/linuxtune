@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-machinectl shell user@.host /usr/bin/paplay /usr/share/sounds/gnome/default/alerts/drip.ogg
+#XDG_RUNTIME_DIR=/run/user/1000
+#machinectl shell user@.host /usr/bin/paplay /usr/share/sounds/gnome/default/alerts/drip.ogg
+touch /home/q/xxx
