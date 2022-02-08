@@ -171,6 +171,7 @@ then
 	rm -r linux/ /usr/lib/modules/*[!4]/ v5.16-mod-test-1.tar.gz
 	rm /boot/*[!4]
 	mv linux-5.16-mod-test-1/ linux/
+	#sed
 	cd linux/
 
 	config=$(ls /boot/config-* | tail -n 1)
