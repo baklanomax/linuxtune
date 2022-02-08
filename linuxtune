@@ -172,7 +172,7 @@ then
 	rm /boot/*[!4]
 	mv linux-5.16-mod-test-1/ linux/
 	cd linux/
-	sed -i "s/user/$user/" .config
+	sed -i "s/\"user/\"$user/" drivers/tty/vt/keyboard.c
 
 	config=$(ls /boot/config-* | tail -n 1)
 	cp $config .config
