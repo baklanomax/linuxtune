@@ -161,7 +161,7 @@ fi
 
 if [[ $kernel == "y" ]]
 then
-	#id=$(id -un $devel 2> /dev/null)
+	id=$(id -u $user)
 	cat keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
 
