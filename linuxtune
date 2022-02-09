@@ -118,9 +118,7 @@ then
 	cat logind.conf > /etc/systemd/logind.conf
 
 	mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
-	cat override_root.conf | tee /etc/systemd/system/getty@tty{3,4}.service.d/override.conf &> /dev/null
 	sed "s/user/$user/" override.conf | tee /etc/systemd/system/getty@tty{3..15}.service.d/override.conf &> /dev/null
-	sed "s/devel/$devel/" override_devel.conf | tee /etc/systemd/system/getty@tty{14,15}.service.d/override.conf &> /dev/null
 
 	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard delay 2000
 	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
