@@ -61,15 +61,4 @@ PROMPT_COMMAND="history -a; history -n"
 /usr/sbin/kbdrate -r 2.0 -d 1000 &> /dev/null
 alias mc='mc -u'
 alias mcedit='mcedit -u'
-
-case $(tty) in
-	/dev/tty[34] )
-		setterm --background blue --foreground green --store --clear=rest
-		;;
-	/dev/tty[5-9] | /dev/tty1[0-3] )
-		setterm --background cyan --foreground yellow --bold on --store --clear=rest
-		;;
-	/dev/tty1[45] )
-		setterm --foreground magenta --store --clear=rest
-		;;
-esac
+setterm --background cyan --foreground yellow --bold on --store --clear=rest
