@@ -105,10 +105,8 @@ if [[ $tune == "y" ]]
 then
 	mkdir -m 700 /root/{.config/,.config/mc/}
 	sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
-	sudo -u $devel mkdir -m 700 /home/$devel/{.config/,.config/mc/}
 	cat ini > /root/.config/mc/ini
 	cat ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
-	cat ini | sudo -u $devel tee /home/$devel/.config/mc/ini &> /dev/null
 
 	cat bash.bashrc > /etc/bash.bashrc
 	cat console-setup > /etc/default/console-setup
