@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 export XDG_RUNTIME_DIR=/run/user/1000
-paplay /usr/share/sounds/gnome/default/alerts/$1.ogg
+paplay /usr/share/sounds/gnome/default/alerts/$2.ogg
