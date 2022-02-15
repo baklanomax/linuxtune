@@ -2,7 +2,7 @@
 
 if
 then
-	sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.16.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/" /usr/local/bin/keysound
+	sed -i "s/$1/$2/" /usr/local/bin/keysound
 else
-	sed -i "s/.*CONFIG_BUILD_SALT.*/CONFIG_BUILD_SALT=\"5.16.0-amd64\"/; s/.*CONFIG_I2C_HID_ACPI.*/CONFIG_I2C_HID_ACPI=m/" /usr/local/bin/keysound
+	sed -i "s/$2/$1/" /usr/local/bin/keysound
 fi
