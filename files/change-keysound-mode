@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if
+if grep $1 /usr/local/bin/keysound
 then
 	sed -i "s/$1/$2/" /usr/local/bin/keysound
 else
