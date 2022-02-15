@@ -132,6 +132,9 @@ then
 	id=$(id -u $user)
 	sed "s/1000/$id/" files/keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
+	
+	cat files/change-keysound-mode > /usr/local/sbin/change-keysound-mode
+	chmod +x /usr/local/sbin/change-keysound-mode
 
 	mkdir /usr/share/keysound/
 	cp -r sounds/ /usr/share/keysound/
