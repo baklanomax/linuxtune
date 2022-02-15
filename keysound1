@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
-if
-then
-	export XDG_RUNTIME_DIR=/run/user/1000
-	paplay /usr/share/keysound/sounds/$1.ogg
-fi
+export XDG_RUNTIME_DIR=/run/user/1000
+paplay /usr/share/keysound/sounds/$1.ogg
