@@ -130,7 +130,7 @@ fi
 if [[ $kernel == "y" ]]
 then
 	id=$(id -u $user)
-	sed "s/1000/$id/" keysound > /usr/local/bin/keysound
+	sed "s/1000/$id/" files/keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
 fi
 
