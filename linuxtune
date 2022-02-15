@@ -134,6 +134,7 @@ then
 	chmod +x /usr/local/bin/keysound
 
 	mkdir /usr/share/keysound/
+	cp -r sounds/ /usr/share/keysound/
 fi
 
 if [[ $kbd == "y" ]]
