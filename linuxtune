@@ -132,6 +132,8 @@ then
 	id=$(id -u $user)
 	sed "s/1000/$id/" files/keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
+
+	mkdir //////
 fi
 
 if [[ $kbd == "y" ]]
