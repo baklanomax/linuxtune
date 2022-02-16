@@ -134,7 +134,9 @@ then
 	chmod +x /usr/local/bin/keysound
 	
 	cat files/change-keysound-mode > /usr/local/sbin/change-keysound-mode
-	chmod +x /usr/local/sbin/change-keysound-mode
+	cat files/change-keysound-mode-english > /usr/local/sbin/change-keysound-mode-english
+	cat files/change-keysound-mode-russian > /usr/local/sbin/change-keysound-mode-russian
+	chmod +x /usr/local/sbin/change-keysound-mode*
 
 	mkdir /usr/share/keysound/
 	cp -r sounds/ /usr/share/keysound/
