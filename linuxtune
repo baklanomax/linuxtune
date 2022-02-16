@@ -133,7 +133,7 @@ then
 	sed "s/1000/$id/" files/keysound > /usr/local/bin/keysound
 	chmod +x /usr/local/bin/keysound
 	
-	cp files files/change-keysound-* /usr/local/sbin/
+	cp files/change-keysound-* /usr/local/sbin/
 	chmod +x /usr/local/sbin/change-keysound-*
 
 	mkdir /usr/share/keysound/
