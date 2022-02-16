@@ -105,15 +105,15 @@ if [[ $tune == "y" ]]
 then
 	mkdir -m 700 /root/{.config/,.config/mc/}
 	sudo -u $user mkdir -m 700 /home/$user/{.config/,.config/mc/}
-	cat files/ini > /root/.config/mc/ini
-	cat files/ini | sudo -u $user tee /home/$user/.config/mc/ini &> /dev/null
+	cp files/ini /root/.config/mc/
+	sudo -u $user cp files/ini /home/$user/.config/mc/
 
-	cat files/bash.bashrc > /etc/bash.bashrc
-	cat files/console-setup > /etc/default/console-setup
+	cp files/bash.bashrc /etc/
+	cp files/console-setup /etc/default/
 	sed "s/=user/=$user/" files/daemon.conf > /etc/gdm3/daemon.conf
-	cat files/inputrc > /etc/inputrc
-	cat files/grub > /etc/default/grub
-	cat files/logind.conf > /etc/systemd/logind.conf
+	cp files/inputrc /etc/
+	cp files/grub /etc/default/
+	cp files/logind.conf /etc/systemd/
 
 	mkdir /etc/systemd/system/getty@tty{3..15}.service.d/
 	sed "s/user/$user/" files/override.conf | tee /etc/systemd/system/getty@tty{3..15}.service.d/override.conf &> /dev/null
