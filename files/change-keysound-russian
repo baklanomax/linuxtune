@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-cp $1 /usr/share/keysound/sounds/russian.ogg
+if [[ $1 ]]
+then
+	file $1 | grep "Ogg data, Vorbis audio" &> /dev/null && cp $1 /usr/share/keysound/sounds/russian.ogg || echo "Ошибка: недопустимый формат файла"
+else
+	echo "Ошибка: файл не указан"
+fi
