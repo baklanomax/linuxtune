@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+if 6666
 file $1 | grep "Ogg data, Vorbis audio" &> /dev/null && cp $1 /usr/share/keysound/sounds/english.ogg || echo "Ошибка: недопустимый формат файла"
