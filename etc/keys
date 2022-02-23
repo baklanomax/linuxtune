@@ -1,69 +1,69 @@
-1025	Ё			+ё больш+ое
+1025	cyrillic_capital_letter_io	Ё			+ё больш+ое
 
-1040	А			+а больш+ое
-1041	Б			б+э больш+ое
-1042	В			в+э больш+ое
-1043	Г			г+э больш+ое
-1044	Д			д+э больш+ое
-1045	Е			+е больш+ое
-1046	Ж			ж+е больш+ое
-1047	З			з+э больш+ое
-1048	И			+и больш+ое
-1049	Й			+и кр+аткое больш+ое
-1050	К			к+а больш+ое
-1051	Л			+эль больш+ое
-1052	М			+эм больш+ое
-1053	Н			+эн больш+ое
-1054	О			+о больш+ое
-1055	П			п+э больш+ое
-1056	Р			+эр больш+ое
-1057	С			+эс больш+ое
-1058	Т			т+э больш+ое
-1059	У			+у больш+ое
-1060	Ф			+эф больш+ое
-1061	Х			х+а больш+ое
-1062	Ц			ц+е больш+ое
-1063	Ч			ч+е больш+ое
-1064	Ш			ш+а больш+ое
-1065	Щ			щ+а больш+ое
-1066	Ъ			тв+ёрдый зн+ак больш+ой
-1067	Ы			+ы больш+ое
-1068	Ь			м+ягкий зн+ак больш+ой
-1069	Э			+э больш+ое
-1070	Ю			+ю больш+ое
-1071	Я			+я больш+ое
-1072	а			+а
-1073	б			б+э
-1074	в			в+э
-1075	г			г+э
-1076	д			д+э
-1077	е			+е
-1078	ж			ж+е
-1079	з			з+э
-1080	и			+и
-1081	й			+и кр+аткое
-1082	к			к+а
-1083	л			+эль
-1084	м			+эм
-1085	н			+эн
-1086	о			+о
-1087	п			п+э
-1088	р			+эр
-1089	с			+эс
-1090	т			т+э
-1091	у			+у
-1092	ф			+эф
-1093	х			х+а
-1094	ц			ц+е
-1095	ч			ч+е
-1096	ш			ш+а
-1097	щ			щ+а
-1098	ъ			тв+ёрдый зн+ак
-1099	ы			+ы
-1100	ь			м+ягкий зн+ак
-1101	э			+э
-1102	ю			+ю
-1103	я			+я
+1040	cyrillic_capital_letter_a	А			+а больш+ое
+1041	cyrillic_capital_letter_be	Б			б+э больш+ое
+1042	cyrillic_capital_letter_ve	В			в+э больш+ое
+1043	cyrillic_capital_letter_ghe	Г			г+э больш+ое
+1044	cyrillic_capital_letter_de	Д			д+э больш+ое
+1045	cyrillic_capital_letter_ie	Е			+е больш+ое
+1046	cyrillic_capital_letter_zhe	Ж			ж+е больш+ое
+1047	cyrillic_capital_letter_ze	З			з+э больш+ое
+1048	cyrillic_capital_letter_i	И			+и больш+ое
+1049	cyrillic_capital_letter_short_i	Й			+и кр+аткое больш+ое
+1050	cyrillic_capital_letter_ka	К			к+а больш+ое
+1051	cyrillic_capital_letter_el	Л			+эль больш+ое
+1052	cyrillic_capital_letter_em	М			+эм больш+ое
+1053	cyrillic_capital_letter_en	Н			+эн больш+ое
+1054	cyrillic_capital_letter_o	О			+о больш+ое
+1055	cyrillic_capital_letter_pe	П			п+э больш+ое
+1056	cyrillic_capital_letter_er	Р			+эр больш+ое
+1057	cyrillic_capital_letter_es	С			+эс больш+ое
+1058	cyrillic_capital_letter_te	Т			т+э больш+ое
+1059	cyrillic_capital_letter_u	У			+у больш+ое
+1060	cyrillic_capital_letter_ef	Ф			+эф больш+ое
+1061	cyrillic_capital_letter_ha	Х			х+а больш+ое
+1062	cyrillic_capital_letter_tse	Ц			ц+е больш+ое
+1063	cyrillic_capital_letter_che	Ч			ч+е больш+ое
+1064	cyrillic_capital_letter_sha	Ш			ш+а больш+ое
+1065	cyrillic_capital_letter_shcha	Щ			щ+а больш+ое
+1066	cyrillic_capital_hard_sign	Ъ			тв+ёрдый зн+ак больш+ой
+1067	cyrillic_capital_letter_yeru	Ы			+ы больш+ое
+1068	cyrillic_capital_soft_sign	Ь			м+ягкий зн+ак больш+ой
+1069	cyrillic_capital_letter_e	Э			+э больш+ое
+1070	cyrillic_capital_letter_yu	Ю			+ю больш+ое
+1071	cyrillic_capital_letter_ya	Я			+я больш+ое
+1072	cyrillic_small_letter_a		а			+а
+1073	cyrillic_small_letter_be	б			б+э
+1074	cyrillic_small_letter_ve	в			в+э
+1075	cyrillic_small_letter_ghe	г			г+э
+1076	cyrillic_small_letter_de	д			д+э
+1077	cyrillic_small_letter_ie	е			+е
+1078	cyrillic_small_letter_zhe	ж			ж+е
+1079	cyrillic_small_letter_ze	з			з+э
+1080	cyrillic_small_letter_i		и			+и
+1081	cyrillic_small_letter_short_i	й			+и кр+аткое
+1082	cyrillic_small_letter_ka	к			к+а
+1083	cyrillic_small_letter_el	л			+эль
+1084	cyrillic_small_letter_em	м			+эм
+1085	cyrillic_small_letter_en	н			+эн
+1086	cyrillic_small_letter_o		о			+о
+1087	cyrillic_small_letter_pe	п			п+э
+1088	cyrillic_small_letter_er	р			+эр
+1089	cyrillic_small_letter_es	с			+эс
+1090	cyrillic_small_letter_te	т			т+э
+1091	cyrillic_small_letter_u		у			+у
+1092	cyrillic_small_letter_ef	ф			+эф
+1093	cyrillic_small_letter_ha	х			х+а
+1094	cyrillic_small_letter_tse	ц			ц+е
+1095	cyrillic_small_letter_che	ч			ч+е
+1096	cyrillic_small_letter_sha	ш			ш+а
+1097	cyrillic_small_letter_shcha	щ			щ+а
+1098	cyrillic_small_hard_sign	ъ			тв+ёрдый зн+ак
+1099	cyrillic_small_letter_yeru	ы			+ы
+1100	cyrillic_small_soft_sign	ь			м+ягкий зн+ак
+1101	cyrillic_small_letter_e		э			+э
+1102	cyrillic_small_letter_yu	ю			+ю
+1103	cyrillic_small_letter_ya	я			+я
 
 1105	ё			+ё
 
