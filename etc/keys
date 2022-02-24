@@ -163,7 +163,7 @@
 62221	KP_Divide			/ (NK)		слаш
 62222	KP_Enter			ENTER (NK)	ввод
 
-62224	KP_Period			DELETE (NK)
+62224	KP_Period			DELETE (NK)	дилит
 
 62976	Down				DOWN		вниз
 62977	Left				LEFT		влево
