@@ -1,176 +1,160 @@
-1025	cyrillic_capital_letter_io	Ё		+ё больш+ое
++ё больш+ое
 
-1040	cyrillic_capital_letter_a	А		+а больш+ое
-1041	cyrillic_capital_letter_be	Б		б+э больш+ое
-1042	cyrillic_capital_letter_ve	В		в+э больш+ое
-1043	cyrillic_capital_letter_ghe	Г		г+э больш+ое
-1044	cyrillic_capital_letter_de	Д		д+э больш+ое
-1045	cyrillic_capital_letter_ie	Е		+е больш+ое
-1046	cyrillic_capital_letter_zhe	Ж		ж+е больш+ое
-1047	cyrillic_capital_letter_ze	З		з+э больш+ое
-1048	cyrillic_capital_letter_i	И		+и больш+ое
-1049	cyrillic_capital_letter_short_i	Й		+и кр+аткое больш+ое
-1050	cyrillic_capital_letter_ka	К		к+а больш+ое
-1051	cyrillic_capital_letter_el	Л		+эль больш+ое
-1052	cyrillic_capital_letter_em	М		+эм больш+ое
-1053	cyrillic_capital_letter_en	Н		+эн больш+ое
-1054	cyrillic_capital_letter_o	О		+о больш+ое
-1055	cyrillic_capital_letter_pe	П		п+э больш+ое
-1056	cyrillic_capital_letter_er	Р		+эр больш+ое
-1057	cyrillic_capital_letter_es	С		+эс больш+ое
-1058	cyrillic_capital_letter_te	Т		т+э больш+ое
-1059	cyrillic_capital_letter_u	У		+у больш+ое
-1060	cyrillic_capital_letter_ef	Ф		+эф больш+ое
-1061	cyrillic_capital_letter_ha	Х		х+а больш+ое
-1062	cyrillic_capital_letter_tse	Ц		ц+е больш+ое
-1063	cyrillic_capital_letter_che	Ч		ч+е больш+ое
-1064	cyrillic_capital_letter_sha	Ш		ш+а больш+ое
-1065	cyrillic_capital_letter_shcha	Щ		щ+а больш+ое
-1066	cyrillic_capital_hard_sign	Ъ		тв+ёрдый зн+ак больш+ой
-1067	cyrillic_capital_letter_yeru	Ы		+ы больш+ое
-1068	cyrillic_capital_soft_sign	Ь		м+ягкий зн+ак больш+ой
-1069	cyrillic_capital_letter_e	Э		+э больш+ое
-1070	cyrillic_capital_letter_yu	Ю		+ю больш+ое
-1071	cyrillic_capital_letter_ya	Я		+я больш+ое
-1072	cyrillic_small_letter_a		а		+а
-1073	cyrillic_small_letter_be	б		б+э
-1074	cyrillic_small_letter_ve	в		в+э
-1075	cyrillic_small_letter_ghe	г		г+э
-1076	cyrillic_small_letter_de	д		д+э
-1077	cyrillic_small_letter_ie	е		+е
-1078	cyrillic_small_letter_zhe	ж		ж+е
-1079	cyrillic_small_letter_ze	з		з+э
-1080	cyrillic_small_letter_i		и		+и
-1081	cyrillic_small_letter_short_i	й		+и кр+аткое
-1082	cyrillic_small_letter_ka	к		к+а
-1083	cyrillic_small_letter_el	л		+эль
-1084	cyrillic_small_letter_em	м		+эм
-1085	cyrillic_small_letter_en	н		+эн
-1086	cyrillic_small_letter_o		о		+о
-1087	cyrillic_small_letter_pe	п		п+э
-1088	cyrillic_small_letter_er	р		+эр
-1089	cyrillic_small_letter_es	с		+эс
-1090	cyrillic_small_letter_te	т		т+э
-1091	cyrillic_small_letter_u		у		+у
-1092	cyrillic_small_letter_ef	ф		+эф
-1093	cyrillic_small_letter_ha	х		х+а
-1094	cyrillic_small_letter_tse	ц		ц+е
-1095	cyrillic_small_letter_che	ч		ч+е
-1096	cyrillic_small_letter_sha	ш		ш+а
-1097	cyrillic_small_letter_shcha	щ		щ+а
-1098	cyrillic_small_hard_sign	ъ		тв+ёрдый зн+ак
-1099	cyrillic_small_letter_yeru	ы		+ы
-1100	cyrillic_small_soft_sign	ь		м+ягкий зн+ак
-1101	cyrillic_small_letter_e		э		+э
-1102	cyrillic_small_letter_yu	ю		+ю
-1103	cyrillic_small_letter_ya	я		+я
++а больш+ое
+б+э больш+ое
+в+э больш+ое
+г+э больш+ое
+д+э больш+ое
++е больш+ое
+ж+е больш+ое
+з+э больш+ое
++и больш+ое
++и кр+аткое больш+ое
+к+а больш+ое
++эль больш+ое
++эм больш+ое
++эн больш+ое
++о больш+ое
+п+э больш+ое
++эр больш+ое
++эс больш+ое
+т+э больш+ое
++у больш+ое
++эф больш+ое
+х+а больш+ое
+ц+е больш+ое
+ч+е больш+ое
+ш+а больш+ое
+щ+а больш+ое
+тв+ёрдый зн+ак больш+ой
++ы больш+ое
+м+ягкий зн+ак больш+ой
++э больш+ое
++ю больш+ое
++я больш+ое
++а
+б+э
+в+э
+г+э
+д+э
++е
+ж+е
+з+э
++и
++и кр+аткое
+к+а
++эль
++эм
++эн
++о
+п+э
++эр
++эс
+т+э
++у
++эф
+х+а
+ц+е
+ч+е
+ш+а
+щ+а
+тв+ёрдый зн+ак
++ы
+м+ягкий зн+ак
++э
++ю
++я
 
-1105	cyrillic_small_letter_io	ё		+ё
++ё
 
-8470	number_acronym			№		н+омер
+н+омер
 
-61449	Tab				TAB		т+аб
+т+аб
 
-61467	Escape				ESC		+эск
++эск
 
-61472	space				SPACE		проб+ел
-61473	exclam				!		восклиц+ательный зн+ак
-61474	quotedbl			"		двойн+ая кав+ычка
-61475	numbersign			#		реш+ётка
-61476	dollar				$		д+оллар
-61477	percent				%		проц+ент
-61478	ampersand			&		амперс+анд
-61479	apostrophe			'		один+очная кав+ычка
-61480	parenleft			(		открыв+ающая кр+углая ск+обка
-61481	parenright			)		закрыв+ающая кр+углая ск+обка
-61482	asterisk			*		зв+ёздочка
-61483	plus				+		пл+юс
-61484	comma				,		запят+ая
-61485	minus				-		деф+ис
-61486	period				.		т+очка
-61487	slash				/		сл+аш
-61488	zero				0		н+оль
-61489	one				1		од+ин
-61490	two				2		дв+а
-61491	three				3		тр+и
-61492	four				4		чет+ыре
-61493	five				5		п+ять
-61494	six				6		ш+есть
-61495	seven				7		с+емь
-61496	eight				8		в+осемь
-61497	nine				9		д+евять
-61498	colon				:		двоет+очие
-61499	semicolon			;		т+очка с запят+ой
-61500	less				<		м+еньше
-61501	equal				=		равн+о
-61502	greater				>		б+ольше
-61503	question			?		вопрос+ительный зн+ак
-61504	at				@		соб+ака
+проб+ел
+восклиц+ательный зн+ак
+двойн+ая кав+ычка
+реш+ётка
+д+оллар
+проц+ент
+амперс+анд
+один+очная кав+ычка
+открыв+ающая кр+углая ск+обка
+закрыв+ающая кр+углая ск+обка
+зв+ёздочка
+пл+юс
+запят+ая
+деф+ис
+т+очка
+сл+аш
+н+оль
+од+ин
+дв+а
+тр+и
+чет+ыре
+п+ять
+ш+есть
+с+емь
+в+осемь
+д+евять
+двоет+очие
+т+очка с запят+ой
+м+еньше
+равн+о
+б+ольше
+вопрос+ительный зн+ак
+соб+ака
 
-61531	bracketleft			[		открыв+ающая квадр+атная ск+обка
-61532	backslash			\		б+акслаш
-61533	bracketright			]		закрыв+ающая квадр+атная ск+обка
-61534	asciicircum			^		кар+ет
-61535	underscore			_		подч+ёркивание
-61536	grave				`		обр+атный ап+остроф
+открыв+ающая квадр+атная ск+обка
+б+акслаш
+закрыв+ающая квадр+атная ск+обка
+кар+ет
+подч+ёркивание
+обр+атный ап+остроф
 
-61563	braceleft			{		открыв+ающая фиг+урная ск+обка
-61564	bar				|		черт+а
-61565	braceright			}		закрыв+ающая фиг+урная ск+обка
-61566	asciitilde			~		т+ильда
-61567	Delete				BACKSPACE	б+акспейс
+открыв+ающая фиг+урная ск+обка
+черт+а
+закрыв+ающая фиг+урная ск+обка
+т+ильда
+б+акспейс
 
-61696	F1				F1		+эф од+ин
-61697	F2				F2		+эф дв+а
-61698	F3				F3		+эф тр+и
-61699	F4				F4		+эф чет+ыре
-61700	F5				F5		+эф п+ять
-61701	F6				F6		+эф ш+есть
-61702	F7				F7		+эф с+емь
-61703	F8				F8		+эф в+осемь
-61704	F9				F9		+эф д+евять
-61705	F10				F10		+эф д+есять
-61706	F11				F11		+эф од+иннадцать
-61707	F12				F12		+эф двен+адцать
++эф од+ин
++эф дв+а
++эф тр+и
++эф чет+ыре
++эф п+ять
++эф ш+есть
++эф с+емь
++эф в+осемь
++эф д+евять
++эф д+есять
++эф од+иннадцать
++эф двен+адцать
 
-61716	Find				HOME		х+эум
-61717	Insert				INSERT		инс+эт
-61718	Remove				DELETE		дил+ит
-61719	Select				END		+энд
-61720	Prior				PAGE UP		п+эйдж +ап
-61721	Next				PAGE DOWN	п+эйдж д+аун
+х+эум
+инс+эт
+дил+ит
++энд
+п+эйдж +ап
+п+эйдж д+аун
 
-61953	Return				ENTER		вв+од
+вв+од
 
-61960	Num_Lock			NUM LOCK	н+ам л+ок
-61961	Scroll_Lock			SCROLL LOCK	скр+ол л+ок
+н+ам л+ок
+скр+ол л+ок
 
-61968	Pause				BREAK		бр+эйк
+бр+эйк
 
-62208	KP_0				INSERT (NK)	инс+эт
-62209	KP_1				END (NK)	+энд
-62210	KP_2				DOWN (NK)	вн+из
-62211	KP_3				PAGE DOWN (NK)	п+эйдж д+аун
-62212	KP_4				LEFT (NK)	вл+ево
-62213	KP_5				5 (NK)		ц+ентр
-62214	KP_6				RIGHT (NK)	впр+аво
-62215	KP_7				HOME (NK)	х+эум
-62216	KP_8				UP (NK)		вв+ерх
-62217	KP_9				PAGE UP (NK)	п+эйдж +ап
-62218	KP_Add				+ (NK)		пл+юс
-62219	KP_Subtract			- (NK)		деф+ис
-62220	KP_Multiply			* (NK)		зв+ёздочка
-62221	KP_Divide			/ (NK)		сл+аш
-62222	KP_Enter			ENTER (NK)	вв+од
+ц+ентр
 
-62224	KP_Period			DELETE (NK)
+вн+из
+вл+ево
+впр+аво
+вв+ерх
 
-62976	Down				DOWN		вн+из
-62977	Left				LEFT		вл+ево
-62978	Right				RIGHT		впр+аво
-62979	Up				UP		вв+ерх
-
-63232	Shift				SHIFT		ш+ифт
+ш+ифт
 
 кэнчр+ол
 +олт
