@@ -1,91 +1,91 @@
-1025	cyrillic_capital_letter_io	Ё		+ё больш+ое
+1025	cyrillic_capital_letter_io	Ё		ё большое
 
-1040	cyrillic_capital_letter_a	А		+а больш+ое
-1041	cyrillic_capital_letter_be	Б		б+э больш+ое
-1042	cyrillic_capital_letter_ve	В		в+э больш+ое
-1043	cyrillic_capital_letter_ghe	Г		г+э больш+ое
-1044	cyrillic_capital_letter_de	Д		д+э больш+ое
-1045	cyrillic_capital_letter_ie	Е		+е больш+ое
-1046	cyrillic_capital_letter_zhe	Ж		ж+е больш+ое
-1047	cyrillic_capital_letter_ze	З		з+э больш+ое
-1048	cyrillic_capital_letter_i	И		+и больш+ое
-1049	cyrillic_capital_letter_short_i	Й		+и кр+аткое больш+ое
-1050	cyrillic_capital_letter_ka	К		к+а больш+ое
-1051	cyrillic_capital_letter_el	Л		+эль больш+ое
-1052	cyrillic_capital_letter_em	М		+эм больш+ое
-1053	cyrillic_capital_letter_en	Н		+эн больш+ое
-1054	cyrillic_capital_letter_o	О		+о больш+ое
-1055	cyrillic_capital_letter_pe	П		п+э больш+ое
-1056	cyrillic_capital_letter_er	Р		+эр больш+ое
-1057	cyrillic_capital_letter_es	С		+эс больш+ое
-1058	cyrillic_capital_letter_te	Т		т+э больш+ое
-1059	cyrillic_capital_letter_u	У		+у больш+ое
-1060	cyrillic_capital_letter_ef	Ф		+эф больш+ое
-1061	cyrillic_capital_letter_ha	Х		х+а больш+ое
-1062	cyrillic_capital_letter_tse	Ц		ц+е больш+ое
-1063	cyrillic_capital_letter_che	Ч		ч+е больш+ое
-1064	cyrillic_capital_letter_sha	Ш		ш+а больш+ое
-1065	cyrillic_capital_letter_shcha	Щ		щ+а больш+ое
-1066	cyrillic_capital_hard_sign	Ъ		тв+ёрдый зн+ак больш+ой
-1067	cyrillic_capital_letter_yeru	Ы		+ы больш+ое
-1068	cyrillic_capital_soft_sign	Ь		м+ягкий зн+ак больш+ой
-1069	cyrillic_capital_letter_e	Э		+э больш+ое
-1070	cyrillic_capital_letter_yu	Ю		+ю больш+ое
-1071	cyrillic_capital_letter_ya	Я		+я больш+ое
-1072	cyrillic_small_letter_a		а		+а
-1073	cyrillic_small_letter_be	б		б+э
-1074	cyrillic_small_letter_ve	в		в+э
-1075	cyrillic_small_letter_ghe	г		г+э
-1076	cyrillic_small_letter_de	д		д+э
-1077	cyrillic_small_letter_ie	е		+е
-1078	cyrillic_small_letter_zhe	ж		ж+е
-1079	cyrillic_small_letter_ze	з		з+э
-1080	cyrillic_small_letter_i		и		+и
-1081	cyrillic_small_letter_short_i	й		+и кр+аткое
-1082	cyrillic_small_letter_ka	к		к+а
-1083	cyrillic_small_letter_el	л		+эль
-1084	cyrillic_small_letter_em	м		+эм
-1085	cyrillic_small_letter_en	н		+эн
-1086	cyrillic_small_letter_o		о		+о
-1087	cyrillic_small_letter_pe	п		п+э
-1088	cyrillic_small_letter_er	р		+эр
-1089	cyrillic_small_letter_es	с		+эс
-1090	cyrillic_small_letter_te	т		т+э
-1091	cyrillic_small_letter_u		у		+у
-1092	cyrillic_small_letter_ef	ф		+эф
-1093	cyrillic_small_letter_ha	х		х+а
-1094	cyrillic_small_letter_tse	ц		ц+е
-1095	cyrillic_small_letter_che	ч		ч+е
-1096	cyrillic_small_letter_sha	ш		ш+а
-1097	cyrillic_small_letter_shcha	щ		щ+а
-1098	cyrillic_small_hard_sign	ъ		тв+ёрдый зн+ак
-1099	cyrillic_small_letter_yeru	ы		+ы
-1100	cyrillic_small_soft_sign	ь		м+ягкий зн+ак
-1101	cyrillic_small_letter_e		э		+э
-1102	cyrillic_small_letter_yu	ю		+ю
-1103	cyrillic_small_letter_ya	я		+я
+1040	cyrillic_capital_letter_a	А		а большое
+1041	cyrillic_capital_letter_be	Б		бэ большое
+1042	cyrillic_capital_letter_ve	В		вэ большое
+1043	cyrillic_capital_letter_ghe	Г		гэ большое
+1044	cyrillic_capital_letter_de	Д		дэ большое
+1045	cyrillic_capital_letter_ie	Е		е большое
+1046	cyrillic_capital_letter_zhe	Ж		же большое
+1047	cyrillic_capital_letter_ze	З		зэ большое
+1048	cyrillic_capital_letter_i	И		и большое
+1049	cyrillic_capital_letter_short_i	Й		и краткое большое
+1050	cyrillic_capital_letter_ka	К		ка большое
+1051	cyrillic_capital_letter_el	Л		эль большое
+1052	cyrillic_capital_letter_em	М		эм большое
+1053	cyrillic_capital_letter_en	Н		эн большое
+1054	cyrillic_capital_letter_o	О		о большое
+1055	cyrillic_capital_letter_pe	П		пэ большое
+1056	cyrillic_capital_letter_er	Р		эр большое
+1057	cyrillic_capital_letter_es	С		эс большое
+1058	cyrillic_capital_letter_te	Т		тэ большое
+1059	cyrillic_capital_letter_u	У		у большое
+1060	cyrillic_capital_letter_ef	Ф		эф большое
+1061	cyrillic_capital_letter_ha	Х		ха большое
+1062	cyrillic_capital_letter_tse	Ц		це большое
+1063	cyrillic_capital_letter_che	Ч		че большое
+1064	cyrillic_capital_letter_sha	Ш		ша большое
+1065	cyrillic_capital_letter_shcha	Щ		ща большое
+1066	cyrillic_capital_hard_sign	Ъ		твёрдый знак большой
+1067	cyrillic_capital_letter_yeru	Ы		ы большое
+1068	cyrillic_capital_soft_sign	Ь		мягкий знак большой
+1069	cyrillic_capital_letter_e	Э		э большое
+1070	cyrillic_capital_letter_yu	Ю		ю большое
+1071	cyrillic_capital_letter_ya	Я		я большое
+1072	cyrillic_small_letter_a		а		а
+1073	cyrillic_small_letter_be	б		бэ
+1074	cyrillic_small_letter_ve	в		вэ
+1075	cyrillic_small_letter_ghe	г		гэ
+1076	cyrillic_small_letter_de	д		дэ
+1077	cyrillic_small_letter_ie	е		е
+1078	cyrillic_small_letter_zhe	ж		же
+1079	cyrillic_small_letter_ze	з		зэ
+1080	cyrillic_small_letter_i		и		и
+1081	cyrillic_small_letter_short_i	й		и краткое
+1082	cyrillic_small_letter_ka	к		ка
+1083	cyrillic_small_letter_el	л		эль
+1084	cyrillic_small_letter_em	м		эм
+1085	cyrillic_small_letter_en	н		эн
+1086	cyrillic_small_letter_o		о		о
+1087	cyrillic_small_letter_pe	п		пэ
+1088	cyrillic_small_letter_er	р		эр
+1089	cyrillic_small_letter_es	с		эс
+1090	cyrillic_small_letter_te	т		тэ
+1091	cyrillic_small_letter_u		у		у
+1092	cyrillic_small_letter_ef	ф		эф
+1093	cyrillic_small_letter_ha	х		ха
+1094	cyrillic_small_letter_tse	ц		це
+1095	cyrillic_small_letter_che	ч		че
+1096	cyrillic_small_letter_sha	ш		ша
+1097	cyrillic_small_letter_shcha	щ		ща
+1098	cyrillic_small_hard_sign	ъ		твёрдый знак
+1099	cyrillic_small_letter_yeru	ы		ы
+1100	cyrillic_small_soft_sign	ь		мягкий знак
+1101	cyrillic_small_letter_e		э		э
+1102	cyrillic_small_letter_yu	ю		ю
+1103	cyrillic_small_letter_ya	я		я
 
-1105	cyrillic_small_letter_io	ё		+ё
+1105	cyrillic_small_letter_io	ё		ё
 
-8470	number_acronym			№		н+омер
+8470	number_acronym			№		номер
 
 61449	Tab				TAB		таб
 
 61467	Escape				ESC		эск
 
 61472	space				SPACE		пробел
-61473	exclam				!		восклицательный зн+ак
+61473	exclam				!		восклицательный знак
 61474	quotedbl			"		двойная кавычка
-61475	numbersign			#		реш+ётка
-61476	dollar				$		д+оллар
-61477	percent				%		проц+ент
-61478	ampersand			&		амперс+анд
+61475	numbersign			#		решётка
+61476	dollar				$		доллар
+61477	percent				%		процент
+61478	ampersand			&		амперсанд
 61479	apostrophe			'		один+очная кав+ычка
-61480	parenleft			(		открыв+ающая кр+углая ск+обка
-61481	parenright			)		закрыв+ающая кр+углая ск+обка
+61480	parenleft			(		открывающая круглая скобка
+61481	parenright			)		закрывающая круглая скобка
 61482	asterisk			*		звёздочка
 61483	plus				+		плюс
-61484	comma				,		запят+ая
+61484	comma				,		запятая
 61485	minus				-		дефис
 61486	period				.		точка
 61487	slash				/		слаш
