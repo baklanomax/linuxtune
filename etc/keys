@@ -188,11 +188,6 @@
 62978	Right				RIGHT		вправо
 62979	Up				UP		вверх
 
-63232	Shift				SHIFT		шифт
-
-63234	Control				CTRL		кэнчрол
-63235	Alt				ALT		олт
-
 64004	ShiftL_Lock			RUS		русский
 64005	ShiftR_Lock			ENG		английский
 64006	CtrlL_Lock			CAPS LOCK	кэпс лок
