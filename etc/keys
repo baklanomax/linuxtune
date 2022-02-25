@@ -145,8 +145,6 @@
 61960	Num_Lock			NUM LOCK	нам лок
 61961	Scroll_Lock			SCROLL LOCK	скрол лок
 
-61968	Pause				BREAK		брэйк
-
 62208	KP_0				INSERT (NK)	инсэт
 62209	KP_1				END (NK)	энд
 62210	KP_2				DOWN (NK)	вниз
