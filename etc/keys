@@ -69,11 +69,11 @@
 
 8470	number_acronym			№		номер
 
-61443	Control_c					прерывание
+61443	Control_c			CTRL + c	прерывание
 
 61449	Tab				TAB		таб
 
-61452	Control_l					очистка
+61452	Control_l			CTRL + l	очистка
 
 61467	Escape				ESC		эск
 
@@ -149,8 +149,8 @@
 61960	Num_Lock			NUM LOCK	нам лок
 61961	Scroll_Lock			SCROLL LOCK	скрол лок
 
-61968	Decr_Console					консоль назад
-61969	Incr_Console					консоль вперёд
+61968	Decr_Console			ALT + LEFT	консоль назад
+61969	Incr_Console			ALT + RIGHT	консоль вперёд
 
 62208	KP_0				INSERT (NK)	инсэт
 62209	KP_1				END (NK)	энд
@@ -170,18 +170,18 @@
 
 62224	KP_Period			DELETE (NK)	дилит
 
-62720	Console_1					консоль один
-62721	Console_2					консоль два
-62722	Console_3					консоль три
-62723	Console_4					консоль четыре
-62724	Console_5					консоль пять
-62725	Console_6					консоль шесть
-62726	Console_7					консоль семь
-62727	Console_8					консоль восемь
-62728	Console_9					консоль девять
-62729	Console_10					консоль десять
-62730	Console_11					консоль одиннадцать
-62731	Console_12					консоль двенадцать
+62720	Console_1			ALT + F1	консоль один
+62721	Console_2			ALT + F2	консоль два
+62722	Console_3			ALT + F3	консоль три
+62723	Console_4			ALT + F4	консоль четыре
+62724	Console_5			ALT + F5	консоль пять
+62725	Console_6			ALT + F6	консоль шесть
+62726	Console_7			ALT + F7	консоль семь
+62727	Console_8			ALT + F8	консоль восемь
+62728	Console_9			ALT + F9	консоль девять
+62729	Console_10			ALT + F10	консоль десять
+62730	Console_11			ALT + F11	консоль одиннадцать
+62731	Console_12			ALT + F12	консоль двенадцать
 
 62976	Down				DOWN		вниз
 62977	Left				LEFT		влево
