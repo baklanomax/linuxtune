@@ -143,10 +143,10 @@ fi
 if [[ $kbd == "y" ]]
 then
 	cd /usr/src/
-	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.4.0-mod.tar.gz
-	tar -zxf v2.4.0-mod.tar.gz
-	rm -r kbd/ v2.4.0-mod.tar.gz
-	mv kbd-2.4.0-mod/ kbd/
+	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.5.0-mod.tar.gz
+	tar -zxf v2.5.0-mod.tar.gz
+	rm -r kbd/ v2.5.0-mod.tar.gz
+	mv kbd-2.5.0-mod/ kbd/
 	cd kbd/
 
 	./autogen.sh
