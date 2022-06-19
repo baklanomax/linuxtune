@@ -123,7 +123,7 @@ then
 	sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-delay 0
 	sudo -u $user dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
 
-	chmod u+s /usr/sbin/kbdrate
+	chmod u+s /usr/bin/chvt /usr/sbin/kbdrate
 	update-grub
 fi
 
