@@ -1,0 +1,247 @@
+1025	cyrillic_capital_letter_io	Ё		ё большое
+
+1040	cyrillic_capital_letter_a	А		а большое
+1041	cyrillic_capital_letter_be	Б		бэ большое
+1042	cyrillic_capital_letter_ve	В		вэ большое
+1043	cyrillic_capital_letter_ghe	Г		гэ большое
+1044	cyrillic_capital_letter_de	Д		дэ большое
+1045	cyrillic_capital_letter_ie	Е		е большое
+1046	cyrillic_capital_letter_zhe	Ж		же большое
+1047	cyrillic_capital_letter_ze	З		зэ большое
+1048	cyrillic_capital_letter_i	И		и большое
+1049	cyrillic_capital_letter_short_i	Й		и краткое большое
+1050	cyrillic_capital_letter_ka	К		ка большое
+1051	cyrillic_capital_letter_el	Л		эль большое
+1052	cyrillic_capital_letter_em	М		эм большое
+1053	cyrillic_capital_letter_en	Н		эн большое
+1054	cyrillic_capital_letter_o	О		о большое
+1055	cyrillic_capital_letter_pe	П		пэ большое
+1056	cyrillic_capital_letter_er	Р		эр большое
+1057	cyrillic_capital_letter_es	С		эс большое
+1058	cyrillic_capital_letter_te	Т		тэ большое
+1059	cyrillic_capital_letter_u	У		у большое
+1060	cyrillic_capital_letter_ef	Ф		эф большое
+1061	cyrillic_capital_letter_ha	Х		ха большое
+1062	cyrillic_capital_letter_tse	Ц		це большое
+1063	cyrillic_capital_letter_che	Ч		че большое
+1064	cyrillic_capital_letter_sha	Ш		ша большое
+1065	cyrillic_capital_letter_shcha	Щ		ща большое
+1066	cyrillic_capital_hard_sign	Ъ		твёрдый знак большой
+1067	cyrillic_capital_letter_yeru	Ы		ы большое
+1068	cyrillic_capital_soft_sign	Ь		мягкий знак большой
+1069	cyrillic_capital_letter_e	Э		э большое
+1070	cyrillic_capital_letter_yu	Ю		ю большое
+1071	cyrillic_capital_letter_ya	Я		я большое
+1072	cyrillic_small_letter_a		а		а
+1073	cyrillic_small_letter_be	б		бэ
+1074	cyrillic_small_letter_ve	в		вэ
+1075	cyrillic_small_letter_ghe	г		гэ
+1076	cyrillic_small_letter_de	д		дэ
+1077	cyrillic_small_letter_ie	е		е
+1078	cyrillic_small_letter_zhe	ж		же
+1079	cyrillic_small_letter_ze	з		зэ
+1080	cyrillic_small_letter_i		и		и
+1081	cyrillic_small_letter_short_i	й		и краткое
+1082	cyrillic_small_letter_ka	к		ка
+1083	cyrillic_small_letter_el	л		эль
+1084	cyrillic_small_letter_em	м		эм
+1085	cyrillic_small_letter_en	н		эн
+1086	cyrillic_small_letter_o		о		о
+1087	cyrillic_small_letter_pe	п		пэ
+1088	cyrillic_small_letter_er	р		эр
+1089	cyrillic_small_letter_es	с		эс
+1090	cyrillic_small_letter_te	т		тэ
+1091	cyrillic_small_letter_u		у		у
+1092	cyrillic_small_letter_ef	ф		эф
+1093	cyrillic_small_letter_ha	х		ха
+1094	cyrillic_small_letter_tse	ц		це
+1095	cyrillic_small_letter_che	ч		че
+1096	cyrillic_small_letter_sha	ш		ша
+1097	cyrillic_small_letter_shcha	щ		ща
+1098	cyrillic_small_hard_sign	ъ		твёрдый знак
+1099	cyrillic_small_letter_yeru	ы		ы
+1100	cyrillic_small_soft_sign	ь		мягкий знак
+1101	cyrillic_small_letter_e		э		э
+1102	cyrillic_small_letter_yu	ю		ю
+1103	cyrillic_small_letter_ya	я		я
+
+1105	cyrillic_small_letter_io	ё		ё
+
+8470	number_acronym			№		номер
+
+61443	Control_c			CTRL + c	прерывание
+
+61449	Tab				TAB		таб
+
+61452	Control_l			CTRL + l	очистка
+
+61467	Escape				ESC		эск
+
+61472	space				SPACE		пробел
+61473	exclam				!		восклицательный знак
+61474	quotedbl			"		двойная кавычка
+61475	numbersign			#		решётка
+61476	dollar				$		доллар
+61477	percent				%		процент
+61478	ampersand			&		амперсанд
+61479	apostrophe			'		одиночная кавычка
+61480	parenleft			(		открывающая круглая скобка
+61481	parenright			)		закрывающая круглая скобка
+61482	asterisk			*		звёздочка
+61483	plus				+		плюс
+61484	comma				,		запятая
+61485	minus				-		дефис
+61486	period				.		точка
+61487	slash				/		слаш
+61488	zero				0		ноль
+61489	one				1		один
+61490	two				2		два
+61491	three				3		три
+61492	four				4		четыре
+61493	five				5		пять
+61494	six				6		шесть
+61495	seven				7		семь
+61496	eight				8		восемь
+61497	nine				9		девять
+61498	colon				:		двоеточие
+61499	semicolon			;		точка с запятой
+61500	less				<		меньше
+61501	equal				=		равно
+61502	greater				>		больше
+61503	question			?		вопросительный знак
+61504	at				@		собака
+
+61531	bracketleft			[		открывающая квадратная скобка
+61532	backslash			\		бакслаш
+61533	bracketright			]		закрывающая квадратная скобка
+61534	asciicircum			^		карет
+61535	underscore			_		подчёркивание
+61536	grave				`		обратный апостроф
+
+61563	braceleft			{		открывающая фигурная скобка
+61564	bar				|		черта
+61565	braceright			}		закрывающая фигурная скобка
+61566	asciitilde			~		тильда
+61567	Delete				BACKSPACE	бакспейс
+
+61696	F1				F1		эф один
+61697	F2				F2		эф два
+61698	F3				F3		эф три
+61699	F4				F4		эф четыре
+61700	F5				F5		эф пять
+61701	F6				F6		эф шесть
+61702	F7				F7		эф семь
+61703	F8				F8		эф восемь
+61704	F9				F9		эф девять
+61705	F10				F10		эф десять
+61706	F11				F11		эф одиннадцать
+61707	F12				F12		эф двенадцать
+
+61716	Find				HOME		хэум
+61717	Insert				INSERT		инсэт
+61718	Remove				DELETE		дилит
+61719	Select				END		энд
+61720	Prior				PAGE UP		пэйдж ап
+61721	Next				PAGE DOWN	пэйдж даун
+
+61953	Return				ENTER		ввод
+
+61960	Num_Lock			NUM LOCK	нам лок
+61961	Scroll_Lock			SCROLL LOCK	скрол лок
+
+61968	Decr_Console			ALT + LEFT	консоль назад
+61969	Incr_Console			ALT + RIGHT	консоль вперёд
+
+62208	KP_0				INSERT (NK)	инсэт
+62209	KP_1				END (NK)	энд
+62210	KP_2				DOWN (NK)	вниз
+62211	KP_3				PAGE DOWN (NK)	пэйдж даун
+62212	KP_4				LEFT (NK)	влево
+62213	KP_5				5 (NK)		центр
+62214	KP_6				RIGHT (NK)	вправо
+62215	KP_7				HOME (NK)	хэум
+62216	KP_8				UP (NK)		вверх
+62217	KP_9				PAGE UP (NK)	пэйдж ап
+62218	KP_Add				+ (NK)		плюс
+62219	KP_Subtract			- (NK)		дефис
+62220	KP_Multiply			* (NK)		звёздочка
+62221	KP_Divide			/ (NK)		слаш
+62222	KP_Enter			ENTER (NK)	ввод
+
+62224	KP_Period			DELETE (NK)	дилит
+
+62720	Console_1			ALT + F1	консоль один
+62721	Console_2			ALT + F2	консоль два
+62722	Console_3			ALT + F3	консоль три
+62723	Console_4			ALT + F4	консоль четыре
+62724	Console_5			ALT + F5	консоль пять
+62725	Console_6			ALT + F6	консоль шесть
+62726	Console_7			ALT + F7	консоль семь
+62727	Console_8			ALT + F8	консоль восемь
+62728	Console_9			ALT + F9	консоль девять
+62729	Console_10			ALT + F10	консоль десять
+62730	Console_11			ALT + F11	консоль одиннадцать
+62731	Console_12			ALT + F12	консоль двенадцать
+
+62976	Down				DOWN		вниз
+62977	Left				LEFT		влево
+62978	Right				RIGHT		вправо
+62979	Up				UP		вверх
+
+64004	ShiftL_Lock			RUS		русский
+64005	ShiftR_Lock			ENG		английский
+64006	CtrlL_Lock			CAPS LOCK	кэпс лок
+
+64321	+A				A		эй большое
+64322	+B				B		би большое
+64323	+C				C		си большое
+64324	+D				D		ди большое
+64325	+У				E		и большое
+64326	+F				F		эф большое
+64327	+G				G		джи большое
+64328	+H				H		эйч большое
+64329	+I				I		ай большое
+64330	+J				J		джей большое
+64331	+K				K		кей большое
+64332	+L				L		эл большое
+64333	+M				M		эм большое
+64334	+N				N		эн большое
+64335	+O				O		оу большое
+64336	+P				P		пи большое
+64337	+Q				Q		кью большое
+64338	+К				R		а большое
+64339	+S				S		эс большое
+64340	+T				T		ти большое
+64341	+U				U		ю большое
+64342	+V				V		ви большое
+64343	+W				W		дабл ю большое
+64344	+X				X		экс большое
+64345	+Y				Y		уай большое
+64346	+Z				Z		зед большое
+
+64353	+a				a		эй
+64354	+b				b		би
+64355	+c				c		си
+64356	+d				d		ди
+64357	+e				e		и
+64358	+f				f		эф
+64359	+g				g		джи
+64360	+h				h		эйч
+64361	+i				i		ай
+64362	+j				j		джей
+64363	+k				k		кей
+64364	+l				l		эл
+64365	+m				m		эм
+64366	+n				n		эн
+64367	+o				o		оу
+64368	+p				p		пи
+64369	+q				q		кью
+64370	+r				r		а
+64371	+s				s		эс
+64372	+t				t		ти
+64373	+u				u		ю
+64374	+v				v		ви
+64375	+w				w		дабл ю
+64376	+x				x		экс
+64377	+y				y		уай
+64378	+z				z		зед
