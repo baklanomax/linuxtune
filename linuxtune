@@ -1,0 +1,146 @@
+#!/usr/bin/env bash
+
+if [[ $EUID -ne 0 ]]
+then
+	echo "linuxtune: необходимы права суперпользователя" >&2
+	exit 1
+fi
+
+until [[ $inputrc == "y" || $inputrc == "n" ]]
+do
+	read -ep "Скопировать файл inputrc? [y/n] " inputrc
+done
+until [[ $swap == "y" || $swap == "n" ]]
+do
+	read -ep "Исправить ссылки на раздел подкачки? [y/n] " swap
+done
+until [[ $mail == "y" || $mail == "n" ]]
+do
+	read -ep "Установить почтовый клиент? [y/n] " mail
+done
+until [[ $tune == "y" || $tune == "n" ]]
+do
+	read -ep "Выполнить основные настройки? [y/n] " tune
+done
+until [[ $kbd == "y" || $kbd == "n" ]]
+do
+	read -ep "Установить пакет kbd с модифицированной командой showkey? [y/n] " kbd
+done
+until [[ $kernel == "y" || $kernel == "n" ]]
+do
+	read -ep "Установить ядро Linux с модифицированным клавиатурным вводом? [y/n] " kernel
+done
+
+if [[ $mail == "y" ]]
+then
+	until [[ $login ]]
+	do
+		read -ep "Введите имя учётной записи для Mail.ru: " login
+	done
+	until [[ $password ]]
+	do
+		read -ep "Введите пароль для Mail.ru: " password
+	done
+	until [[ $name ]]
+	do
+		read -ep "Введите имя отправителя для почтового клиента: " name
+	done
+fi
+if [[ $tune == "y" || $kernel == "y" ]]
+then
+	while true
+	do
+		read -ep "Введите имя учётной записи Linux: " user
+		uid=$(id -u -- $user 2> /dev/null)
+		[[ $(id -un -- $user 2> /dev/null) == $user && $uid -gt 999 ]] && break || echo "Ошибка: учётная запись не указана, не существует или имеет UID меньше 1000" >&2
+	done
+fi
+
+[[ $inputrc == "y" ]] && cp files/inputrc /etc/
+
+if [[ $swap == "y" ]]
+then
+	uuid=$(lsblk -no UUID,FSTYPE | grep swap | cut -d " " -f 1)
+	sed -i "s/UUID=.* none/UUID=$uuid none/g" /etc/fstab
+	echo "RESUME=UUID=$uuid" > /etc/initramfs-tools/conf.d/resume
+	update-initramfs -uk all
+fi
+
+if [[ $mail == "y" || $tune == "y" || $kbd == "y" || $kernel == "y" ]]
+then
+	apt update
+	apt -y upgrade
+	[[ $mail == "y" ]] && apt -y install mutt
+	[[ $tune == "y" ]] && apt -y install dbus-x11 gpm mc tmux
+	[[ $kbd == "y" || $kernel == "y" ]] && apt -y install bison flex make
+	[[ $kbd == "y" ]] && apt -y install autopoint gettext libpam0g-dev libtool
+	[[ $kernel == "y" ]] && apt -y install libelf-dev libssl-dev pahole
+	apt -y autoremove
+fi
+
+[[ $mail == "y" ]] && sed "s/ivanov/$login/g; s/password/$password/g; s/Ivan Ivanov/$name/g" files/Muttrc > /etc/Muttrc
+
+if [[ $tune == "y" ]]
+then
+	mkdir -m 700 /root/{.config/,.config/mc/} 2> /dev/null
+	sudo -u $user mkdir -p -m 700 /home/$user/.config/mc/
+	cp files/ini /root/.config/mc/
+	sudo -u $user cp files/ini /home/$user/.config/mc/
+
+	cp files/console-setup /etc/default/
+	sed "s/=user/=$user/g" files/daemon.conf > /etc/gdm3/daemon.conf
+	cp files/grub /etc/default/
+	cp files/linuxtune.sh /etc/profile.d/
+	cp files/logind.conf /etc/systemd/
+
+	mkdir /etc/systemd/system/getty@tty{3..15}.service.d/ 2> /dev/null
+	sed "s/user/$user/g" files/override.conf | tee /etc/systemd/system/getty@tty{3..15}.service.d/override.conf > /dev/null
+
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard delay 2000
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 110
+	sudo -u $user dbus-launch gsettings set org.gnome.desktop.session idle-delay 0
+
+	chmod u+s /usr/sbin/kbdrate
+	update-grub
+fi
+
+if [[ $kbd == "y" ]]
+then
+	wget https://github.com/baklanomax/kbd/archive/refs/tags/v2.6.4-mod.tar.gz
+	tar -zxf v2.6.4-mod.tar.gz
+	rm v2.6.4-mod.tar.gz
+	cd kbd-2.6.4-mod/
+
+	./autogen.sh
+	./configure
+	make
+	make install
+	cd ..
+	rm -r kbd-2.6.4-mod/
+fi
+
+if [[ $kernel == "y" ]]
+then
+	sed "s/-u user/-u $user/g; s/1000/$uid/g" files/keysound > /usr/local/bin/keysound
+	chmod +x /usr/local/bin/keysound
+	cp files/change-keysound-* /usr/local/sbin/
+	chmod +x /usr/local/sbin/change-keysound-*
+	mkdir /usr/share/keysound/ 2> /dev/null
+	cp -r sounds/ /usr/share/keysound/
+
+	wget https://github.com/baklanomax/linux/archive/refs/tags/v6.6-mod.tar.gz
+	tar -zxf v6.6-mod.tar.gz
+	rm v6.6-mod.tar.gz
+	cd linux-6.6-mod/
+
+	cp $(ls -v /boot/config-*-amd64 | tail -n 1) .config
+	make olddefconfig
+	scripts/config --set-str LOCALVERSION "-mod"
+	make -j $(nproc)
+	make INSTALL_MOD_STRIP=1 modules_install
+	make install
+	cd ..
+	rm -r linux-6.6-mod/
+fi
+
+echo -e "\n\n\nНастройка успешно завершена"
