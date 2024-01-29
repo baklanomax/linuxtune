@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if file -- $1 2> /dev/null | grep "Ogg data, Vorbis audio" > /dev/null
+then
+	cp -- $1 /usr/share/keysound/sounds/russian.ogg
+else
+	echo "change-keysound-russian: файл не указан, не найден или недопустимый формат файла" >&2
+	exit 1
+fi

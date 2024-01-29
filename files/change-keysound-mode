@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+grep "\$1" /usr/local/bin/keysound > /dev/null && sed -i "s/\$1/\$2/g" /usr/local/bin/keysound || sed -i "s/\$2/\$1/g" /usr/local/bin/keysound
